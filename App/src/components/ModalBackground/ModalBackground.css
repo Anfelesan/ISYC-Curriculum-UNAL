@@ -1,0 +1,13 @@
+
+.c-modalBackground{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(7px);
+    background-color: rgba(100, 100, 100, .7);
+}
