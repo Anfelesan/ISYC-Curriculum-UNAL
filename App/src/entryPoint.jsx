@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import MainCurriculum from './pages/mainCurriculum';
+import App from './Routes';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MainCurriculum />
+    <App />
   </React.StrictMode>
 );
