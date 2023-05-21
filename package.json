@@ -1,12 +1,12 @@
 {
   "name": "curriculum",
   "version": "1.0.0",
-  "description": "",
+  "description": "📚 Website of systems engineering and computing curriculum of the National University of Colombia",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["curriculum", "unal", "systems engineering", "systems engineering and computing"],
+  "author": "Anfelesan",
   "license": "ISC"
 }
