@@ -86,8 +86,8 @@ const CURRICULUM_DATA = {
       physics: {
         name: "Física",
         credits: 8,
-        color: "#ffc",
-        colorDM: "#ffc"
+        color: "#ff8686",
+        colorDM: "#ff8686"
       },
       economicSciences: {
         name: "Ciencias económicas y administrativas",
@@ -103,14 +103,19 @@ const CURRICULUM_DATA = {
         color: "#e4dfec",
         colorDM: "#e4dfec"
       },
-      //Infraestruct. Comput, de Com
-      visualComputing: {
-        name: "Computación visual",
-        credits: 3,
+      computerInfrastructure: {
+        name: "Infraestructura informática de comunicaciones y de información",
+        credits: 30,
         color: "#ff6",
         colorDM: "#ff6"
       },
-      intelligentSystems: {
+      visualComputing: {
+        name: "Computación visual",
+        credits: 3,
+        color: "#9ca",
+        colorDM: "#9ca"
+      },
+      smartSystems: {
         name: "Sistemas inteligentes",
         credits: 3,
         color: "#b7dee8",
