@@ -1,21 +1,5 @@
 import CURRICULUM_DATA from "./curriculumData";
 
-export default MATTERS = {
-  1000004: {
-    id: 1000004,
-    name: "Cálculo diferencial",
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
-
-    //This depends of the matter
-    nextMatter: 1000005,
-    prerequisites : [1000001] // [1000001, 1000002] o [1000001, 1000002, 1000003...]
-  }
-}
-
 //mc = matter component
 const mc = {
   basis : CURRICULUM_DATA.components.basis, //Componente de básico o de fundamentación
@@ -41,3 +25,21 @@ const mg = {
   //Free
   free: CURRICULUM_DATA.groups.free.free //Libre elección
 }
+
+//Matters data
+const MATTERS = {
+  1000004: {
+    id: 1000004,
+    name: "Cálculo diferencial",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+
+    //This depends of the matter
+    nextMatter: 1000005,
+    prerequisites : [1000001] // [1000001, 1000002] o [1000001, 1000002, 1000003...]
+  }
+}
+export default MATTERS;

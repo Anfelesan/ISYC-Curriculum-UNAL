@@ -1,0 +1,75 @@
+.matterCard{
+  width: 96%;
+  max-width: 200px;
+  overflow: hidden;
+  border: solid 3px #000;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 10px;
+}
+.matterCard-firstData-container{
+  display: flex;
+  border-bottom: solid 3px #000;
+}
+.matterCard-firstData-container span{
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 800;
+}
+.matterCard-credits{
+  background-color: #000;
+  color: #fff;
+}
+.matterCard-synchronous{
+  border-right: solid 3px #000;
+}
+
+.matterCard-name, .matterCard-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  margin: 0;
+  padding: 8px 2px;
+  border-bottom: solid 3px #000;
+  font-size: 1.04em;
+  text-align: center;
+}
+.matterCard-name{
+  font-weight: 500;
+}
+.matterCard-group{
+  font-weight: 400;
+}
+
+.matterCard-idComponent-container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 3px #000;
+  min-height: 20px;
+}
+.matterCard-id{
+  flex-grow: 2;
+  border-right: solid 3px #000;
+  text-align: center;
+}
+.matterCard-component{
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.08em;
+}
+
+.matterCard-seeMore{
+  border: none;
+  background-color: #0099ff;
+  width: 100%;
+  padding: 3px 1px;
+  font-size: 1.15rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color .15s;
+}
+.matterCard-seeMore:hover{
+  background-color: #0af;
+}
