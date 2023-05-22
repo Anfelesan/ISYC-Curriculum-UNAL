@@ -20,9 +20,14 @@
   color: #09f;
 }
 .header-nav-link{
+  box-sizing: border-box;
   display: inline-block;
   padding: 4.5px 4px;
   width: 100%;
   transition: color .15s;
   text-decoration: none;
+}
+
+.header-nav-link-main{
+  border: solid 2px #ccc
 }

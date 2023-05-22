@@ -8,6 +8,9 @@ const NavBar = () =>  {
       <span>Enfoques</span>
       <ul className='header-nav-ul'>
         <li className='header-nav-li'>
+          <Link to="/" className='header-nav-link header-nav-link-main'>Malla principal</Link>
+        </li>
+        <li className='header-nav-li'>
           <Link to="/ingenieria-de-software" className='header-nav-link'>Ingeniería de software</Link>
         </li>
         <li className='header-nav-li'>

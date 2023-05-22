@@ -7,11 +7,11 @@ const Header = () => {
   return(
     <header>
       <section className='header-info'>
-          <LogoAndInfoContainer />
-          <TitleAndRegulations />
-          <TrainingAreas />
-          <Components />
-          <ComponentAsignatures />
+        <LogoAndInfoContainer />
+        <TitleAndRegulations />
+        <TrainingAreas />
+        <Components />
+        <ComponentAsignatures />
       </section>
       <NavBar />
     </header>
@@ -31,7 +31,7 @@ const LogoAndInfoContainer = () => {
 const TitleAndRegulations = () => {
   return(
     <div className='header-titleAndRegulations'>
-      <h1>Plan de estudios 2879</h1>
+      <span className='header-curriculumTitle'>Plan de estudios 2879</span>
       <p className='titleAndRegulation-clarification'>Sugerido para el plan básico</p>
       <h2 className='titleAndRegulation-regulationTitle'>Normativa</h2>
       <ul className='titleAndRegulation-list'>
