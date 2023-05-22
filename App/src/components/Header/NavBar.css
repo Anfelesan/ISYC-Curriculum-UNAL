@@ -1,0 +1,28 @@
+.header-nav{
+  padding: 8px;
+}
+.header-nav-ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header-nav-li{
+  flex-grow: 1;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.header-nav-li:hover > .header-nav-link{
+  color: #09f;
+}
+.header-nav-link{
+  display: inline-block;
+  padding: 4.5px 4px;
+  width: 100%;
+  transition: color .15s;
+  text-decoration: none;
+}
