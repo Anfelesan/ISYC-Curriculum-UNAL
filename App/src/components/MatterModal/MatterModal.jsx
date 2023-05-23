@@ -2,18 +2,24 @@ import MATTERS from '../../data/matters';
 import ModalBackground from '../ModalBackground/ModalBackground';
 import './MatterModal.css'
 
-const MatterModal = ({id}) => {
+const MatterModal = ({id, handleModal}) => {
   const {credits, name, synchronous, asynchronous, group, component} = MATTERS[id];
   const prerequisites = MATTERS[id]?.prerequisites;
   const nextMatters = MATTERS[id]?.nextMatters;
   const optatives = MATTERS[id]?.optatives;
 
+  const closeModal = () => {
+    handleModal(null)
+  }
+
+  //The modal will be closed if background is clicked
+  //stopPropagation prevent that a click inside the modal affect the event at ModalBackground
   return(
-    <ModalBackground>
-      <div className='matterModal-exit'>
+    <ModalBackground closeModal={closeModal}>
+      <div className='matterModal-exit' onClick={closeModal}>
         <div className='matterModal-exit-x'></div>
       </div>
-      <div className='matterModal'>
+      <div className='matterModal' onClick={e => e.stopPropagation()}>
         <div className='matterModal-firstSection-container'>
           <div>
             <span className='matterModal-idText'>Código:</span>
@@ -24,7 +30,7 @@ const MatterModal = ({id}) => {
             <span className='matterModal-credits'>{credits}</span>
           </div>
         </div>
-        <h3 className='matterModal-name'>Calculo diferencial</h3>
+        <h3 className='matterModal-name'>{name}</h3>
         <div className='matterModal-secondSection-container'>
           <div className='matterModal-weeklyHours'>
             <span className='matterModal-weeklyHours-title'>Horas semanales</span>
@@ -69,16 +75,4 @@ const ListDiv = ({title, list}) => {
   </div>
   );
 }
-
-{/* <div>
-  {nextMatters ?
-    <ul>
-      {nextMatters.map(matterId => 
-        <li>
-        </li>
-      )}
-    </ul>
-  }
-</div> */}
-
 export default MatterModal;

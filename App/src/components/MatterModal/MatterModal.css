@@ -15,6 +15,11 @@
     border-radius: 20px;
     overflow-y: scroll;
     z-index: 1000;
+    animation: displayModal .5s;
+}
+@keyframes displayModal {
+    0% {transform: scale(.7);}
+    100% {transform: scale(1)}
 }
 
 .matterModal-firstSection-container{

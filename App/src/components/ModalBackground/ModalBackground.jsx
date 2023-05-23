@@ -1,8 +1,9 @@
 import './ModalBackground.css';
 
-const ModalBackground = ({children}) => {
+const ModalBackground = ({children, closeModal}) => {
+  //CloseModal is executed without parameters because the objective is to pass null or undefined
   return(
-    <section className='modalBackground'>
+    <section className='modalBackground' onClick={closeModal}>
       {children}
     </section>
   );

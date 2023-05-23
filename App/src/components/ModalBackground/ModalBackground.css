@@ -11,4 +11,9 @@
     align-items: center;
     backdrop-filter: blur(8px);
     background-color: rgba(170, 170, 170, .7);
+    animation: displayBackgroundModal .5s ease;
+}
+
+@keyframes displayBackgroundModal {
+    0% {opacity: 0;}
 }

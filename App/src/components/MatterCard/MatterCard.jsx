@@ -1,10 +1,8 @@
 import MATTERS from "../../data/matters";
 import './MatterCard.css';
 
-console.log(MATTERS[1000004])
-
 //Only { id } is obligatory, others are optional, and if their value are undefined, will be crawled at MATTERS
-const MatterCard = ({id, credits, synchronous, asynchronous, name, group, component}) => {
+const MatterCard = ({id, credits, synchronous, asynchronous, name, group, component, handleModal}) => {
   const matterInfo = MATTERS[id];
   //Props are immutable, so new constants are declared
   const _credits = credits ?? matterInfo.credits,
@@ -29,7 +27,7 @@ const MatterCard = ({id, credits, synchronous, asynchronous, name, group, compon
         <span className="matterCard-id">{id}</span>
         <span className="matterCard-component">{_component.symbol}</span>
       </div>
-      <button className="matterCard-seeMore">Ver más</button>
+      <button className="matterCard-seeMore" onClick={ ()=> handleModal(id) }>Ver más</button>
     </div>
   );
 }
