@@ -69,7 +69,7 @@ const MATTERS = {
     id: 1000005,
     name: "Cálculo integral",
     credits: 4
-  },
+  }
     
     2016375: {
     id: 2016375,
