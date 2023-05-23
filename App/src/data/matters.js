@@ -4,7 +4,8 @@ import CURRICULUM_DATA from "./curriculumData";
 const mc = {
   basis : CURRICULUM_DATA.components.basis, //Componente de básico o de fundamentación
   discipline : CURRICULUM_DATA.components.discipline, //Componente disciplinar o profesional
-  free : CURRICULUM_DATA.components.free //Componente de libre elección
+  free : CURRICULUM_DATA.components.free, //Componente de libre elección
+  leveling: CURRICULUM_DATA.components.leveling
 }
 //mg = matter group
 const mg = {
@@ -28,6 +29,16 @@ const mg = {
 
 //Matters data
 const MATTERS = {
+  1000001: {
+    id: 1000001,
+    name: "Matemáticas básicas",
+    credits: 4,
+    synchronous: 6,
+    asynchronous: 6,
+    component: mc.leveling,
+    group: mg.math,
+    nextMatters: [1000004, 2016377],
+  },
   1000004: {
     id: 1000004,
     name: "Cálculo diferencial",
@@ -38,8 +49,26 @@ const MATTERS = {
     group: mg.math,
 
     //This depends of the matter
-    nextMatter: 1000005,
-    prerequisites : [1000001] // [1000001, 1000002] o [1000001, 1000002, 1000003...]
+    prerequisites: [1000001], // [1000001, 1000002] o [1000001, 1000002, 1000003...]
+    nextMatters: [1000005],
+    optatives: [2016377]
+  },
+  2016377: {
+    id: 2016377,
+    name: "Cálculo diferencial en una variable",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [1000001],
+    nextMatters: [1000005],
+    optatives: [1000004]
+  },
+  1000005: {
+    id: 1000005,
+    name: "Cálculo integral",
+    credits: 4
   }
 }
 export default MATTERS;
