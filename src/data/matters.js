@@ -50,7 +50,7 @@ const MATTERS = {
 
     //This depends of the matter
     prerequisites: [1000001], // [1000001, 1000002] o [1000001, 1000002, 1000003...]
-    nextMatters: [1000005],
+    nextMatters: [1000005,2015556,1000003,2015555,1000019],
     optatives: [2016377]
   },
   2016377: {
@@ -62,13 +62,98 @@ const MATTERS = {
     component: mc.basis,
     group: mg.math,
     prerequisites: [1000001],
-    nextMatters: [1000005],
+    nextMatters: [1000005,2015556,1000003,2015555,1000019],
     optatives: [1000004]
   },
   1000005: {
     id: 1000005,
     name: "Cálculo integral",
-    credits: 4
-  }
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000004,2016377]],//[[1000004,2016377]], cuando es opcional 
+    nextMatters: [1000006,2015162,1000013,2027877,2015178,2015703,2025986,2016047],
+    optatives: [2015556]
+  },
+  2015556: {
+    id: 2015556,
+    name: "Cálculo integral en una variable",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000004,2016377]],
+    nextMatters: [1000006,2015162,1000013,2027877,2015178,2015703,2025986,2016047],
+    optatives: [1000005]
+  },
+  1000006: {
+    id: 1000006,
+    name: "Cálculo en Varias Variables",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000005,2015556]],
+    optatives: [2015162]
+  },
+  2015162: {
+    id: 2015162,
+    name: "Cálculo Vectorial",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000005,2015556]],
+    optatives: [1000006]
+  },
+  1000003: {
+    id: 1000003,
+    name: "Álgebra Lineal",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000004,2016377]],
+    optatives: [2015555]
+  },    
+  2015555: {
+    id: 2015555,
+    name: "Álgebra Lineal Básica",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000004,2016377]],
+    optatives: [1000003]
+  },
+  1000013: {
+    id: 1000013,
+    name: "Probabilidad y Estadística Fundamental",
+    credits: 3, 
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.basis,
+    group: mg.probability,
+    prerequisites: [[1000005,2015556]],
+    optatives: [[2027877,2015178]]
+ },
+ 2027877: {
+    id: 2027877,
+    name: "Probabilidad Fundamental",
+    credits: 4, 
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.probability,
+    prerequisites: [[1000005,2015556]],
+    optatives: [[1000013,2015178]]
+  }, 
 }
 export default MATTERS;
