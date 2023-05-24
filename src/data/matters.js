@@ -874,7 +874,7 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [[2016353,2027641], [2015702, 2016028], 2016703], 
@@ -900,7 +900,7 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 4,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696], 
@@ -914,7 +914,7 @@ const MATTERS = {
 
     synchronous: 4,
     asynchronous: 4,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696], 
@@ -940,7 +940,7 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 4,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696], 
@@ -979,7 +979,7 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 4,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.visualComputing,
 
     prerequisites: [2016696], 
@@ -1257,7 +1257,7 @@ const MATTERS = {
     credits: 6,
     synchronous: 2,
     asynchronous: 16,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.degreeWork,
 
    specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
@@ -1270,7 +1270,7 @@ const MATTERS = {
     credits: 6,
     synchronous: 2,
     asynchronous: 16,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.degreeWork,
 
     specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
@@ -1283,7 +1283,7 @@ const MATTERS = {
     credits: 6,
     synchronous: 4,
     asynchronous: 14,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.degreeWork,
     specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
     optatives: [2025975, 2025974],
@@ -1297,9 +1297,7 @@ const MATTERS = {
     asynchronous: 10,
     component: mc.free,
     group: mg.free,
-    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
-    nextMatters: [],
-    optatives: []
+    specialPrerequisites: "Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
   },
     
   2016764: {
@@ -1310,9 +1308,7 @@ const MATTERS = {
     asynchronous: 15,
     component: mc.free,
     group: mg.free,
-    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
-    nextMatters: [],
-    optatives: []
+    specialPrerequisites: "Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
   },
   1000070: {
     id: 1000070,
@@ -1322,9 +1318,7 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.free,
-    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
-    nextMatters: [],
-    optatives: []
+    specialPrerequisites: "Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
   },
   1000071: {
     id: 1000071,
@@ -1334,9 +1328,7 @@ const MATTERS = {
     asynchronous: 17,
     component: mc.free,
     group: mg.free,
-    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
-    nextMatters: [],
-    optatives: []
+    specialPrerequisites: "Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
   },
   1000072: {
     id: 1000070,
@@ -1346,9 +1338,7 @@ const MATTERS = {
     asynchronous: 26,
     component: mc.free,
     group: mg.free,
-    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
-    nextMatters: [],
-    optatives: []
+    specialPrerequisites: "Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
   },
   2015168: {
     id: 2015168,
@@ -1358,9 +1348,7 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.free,
-    prerequisites: [],
     nextMatters: [2015181,2025819],
-    optatives: []
   },
   2015181: {
     id: 2015181,
@@ -1372,7 +1360,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [2015168],
     nextMatters: [2015155],
-    optatives: []
   },
   2027641: {
     id: 2027641,
@@ -1383,8 +1370,6 @@ const MATTERS = {
     component: mc.free,
     group: mg.computerInfrastructure,
     prerequisites: [2016375],
-    nextMatters: [],
-    optatives: []
   },
   2025819: {
     id: 2025819,
@@ -1396,7 +1381,6 @@ const MATTERS = {
     group: mg.computerScience,
     prerequisites: [2015168],
     nextMatters: [2026548],
-    optatives: []
   },
   2026548: {
     id: 2026548,
@@ -1407,8 +1391,6 @@ const MATTERS = {
     component: mc.free,
     group: mg.computerScience,
     prerequisites: [2015168],
-    nextMatters: [],
-    optatives: []
   },
   2026519: {
     id: 2026519,
@@ -1419,8 +1401,6 @@ const MATTERS = {
     component: mc.free,
     group: mg.free,
     prerequisites: [1000003,2015555,2015181],
-    nextMatters: [],
-    optatives: []
   },
   2016366: {
     id: 2016366,
@@ -1430,9 +1410,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.free,
-    prerequisites: [],
-    nextMatters: [],
-    optatives: []
   },
   2016379: {
     id: 2016379,
@@ -1444,7 +1421,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [1000013,2015178],
     nextMatters: [2016360],
-    optatives: []
   },
   
   2016342: {
@@ -1457,7 +1433,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [1000005,2015556,1000003,2015555],
     nextMatters: [2016506,2015159],
-    optatives: []
   },
   2016495: {
     id: 2016495,
@@ -1469,7 +1444,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [2016489],
     nextMatters: [2016498],
-    optatives: []
   },
   2016489: {
     id: 2016489,
@@ -1481,7 +1455,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [2016509,1000004,2016377],
     nextMatters: [2016495],
-    optatives: []
   },
   2016509: {
     id: 2016509,
@@ -1493,7 +1466,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [2025975],
     nextMatters: [2016489],
-    optatives: []
   },
   2016503: {
     id: 2016503,
@@ -1505,7 +1477,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [2016487],
     nextMatters: [2016492],
-    optatives: []
   },
   2016487: {
     id: 2016487,
@@ -1517,7 +1488,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [1000006,2015162,1000017,2016506],
     nextMatters: [2016503],
-    optatives: []
   },
   2016506: {
     id: 2016506,
@@ -1529,7 +1499,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [2016489,2016342],
     nextMatters: [2016506],
-    optatives: []
   },
   
   2015159: {
@@ -1542,7 +1511,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [2016342],
     nextMatters: [2016507],
-    optatives: []
   },
   2016507: {
     id: 2016507,
@@ -1554,7 +1522,6 @@ const MATTERS = {
     group: mg.free,
     prerequisites: [2015159, 2016506],
     nextMatters: [2017287,2016493],
-    optatives: []
   },
 
 }
