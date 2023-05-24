@@ -1,3 +1,4 @@
+import getFreeDict from "../logic/getFreeDict";
 import CURRICULUM_DATA from "./curriculumData";
 
 export const mainCurriculumContent = [
@@ -8,16 +9,16 @@ export const mainCurriculumContent = [
   [2025970, 2015702, 2025967, 2016701, 2015174], //Semester 5
   [2025971, 2025982, 2015970, 2016702, 2016696, 2016707], //Semester 6
   [2025969, 2025983, 2025994, 2016716, 2025995, 2025966], //Semester 7
-  [2024045, 2016722, 2025972, 2025960, {free: [3, 4, 5]}, {free: [2, 4, 2]}], //Semester 8
-  [{free: [4, 4, 8]}, {free: [4, 4, 8]}, {free: [4, 4, 8]}, {free: [4, 4, 8]}], //Semester 9
-  [{free: [4, 4, 8]}, {free: [4, 4, 8]}, {free: [4, 4, 8]}, {degreeWork: {
+  [2024045, 2016722, 2025972, 2025960, getFreeDict([3, 4, 5]), getFreeDict([2, 4, 2])], //Semester 8
+  [getFreeDict([4, 4, 8]), getFreeDict([4, 4, 8]), getFreeDict([4, 4, 8]), getFreeDict([4, 4, 8])], //Semester 9
+  [getFreeDict([4, 4, 8]), getFreeDict([4, 4, 8]), getFreeDict([4, 4, 8]), {
     name: "Trabajo de grado",
     credits: 6,
     syncronous: 2,
     asynchronous: 16,
     component: CURRICULUM_DATA.components.discipline,
     group: CURRICULUM_DATA.groups.degreeWork
-  }}] //Semester 10
+  }] //Semester 10
 ];
 //malla de ingeniería de software
 export const softwareEngineeringContent = [

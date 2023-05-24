@@ -1,0 +1,46 @@
+.curriculum-semesters-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 9.2% )); /* Crea columnas de tamaño mínimo de 200px y de tamaño máximo igualmente repartido */
+  justify-content: space-around;
+  gap: 10px;
+  padding: 8px;
+}
+.curriculum-semester{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.semester-matters-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+.curriculum-semester-enumeration{
+  display: block;
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1280px){
+  .curriculum-semesters-container{
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 5px;
+  }
+  .curriculum-semester{
+    background-color: #fff;
+    padding: 6px;
+  }
+  .curriculum-semester-enumeration{
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 460px){
+  .curriculum-semesters-container{
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  }
+}
