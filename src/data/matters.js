@@ -98,6 +98,7 @@ const MATTERS = {
     component: mc.basis,
     group: mg.math,
     prerequisites: [[1000005,2015556]],
+    nextMatters: [2015970,2025970,2019082,2015155,2016487],
     optatives: [2015162]
   },
   2015162: {
@@ -109,6 +110,7 @@ const MATTERS = {
     component: mc.basis,
     group: mg.math,
     prerequisites: [[1000005,2015556]],
+    nextMatters: [2015970,2025970,2019082,2015155,2016487],
     optatives: [1000006]
   },
   1000003: {
@@ -144,6 +146,7 @@ const MATTERS = {
     component: mc.basis,
     group: mg.probability,
     prerequisites: [[1000005,2015556]],
+    nextMatters: [2025986,2025994,2025970,2019082,2016379],
     optatives: [[2027877,2015178]]
  },
  2027877: {
@@ -155,6 +158,7 @@ const MATTERS = {
     component: mc.basis,
     group: mg.probability,
     prerequisites: [[1000005,2015556]],
+    nextMatters: [2025986],
     optatives: [[1000013,2015178]]
   }, 
  2015178: {
@@ -166,6 +170,7 @@ const MATTERS = {
     component: mc.basis,
     group: mg.probability,
     prerequisites: [[1000005,2015556]],
+    nextMatters: [2025986,2025994,2025970,2019082,2016379],
     optatives: [1000013,2027877]
  },  
  1000019: {
@@ -188,7 +193,7 @@ const MATTERS = {
     component: mc.basis,
     group: mg.physics,
     prerequisites: [[1000005,2015556],1000019],
-    nextMatters: [1000017],
+    nextMatters: [2025967,2016487],
  },
   2015174: {
     id: 2015174,
