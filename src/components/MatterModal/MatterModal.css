@@ -140,8 +140,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 6px;
-    padding: 6px 10px;
+    gap: 10px;
+    padding: 10px;
 }
 .matterModal-list-div{
     flex-grow: 1;
@@ -149,6 +149,9 @@
     background-color: #101728;
     color: #fff;
     border-radius: 20px;
+}
+.matterModal-list-div:nth-child(3){
+    width: 100%;
 }
 .matterModal-list-title{
     display: block;
@@ -166,6 +169,7 @@
     padding: 5px 7px 0 7px;
     margin: 0;
     border-top: solid 3px #737373;
+    text-align: center;
 }
 .matterModal-list li{
     padding: 5px 7px;
