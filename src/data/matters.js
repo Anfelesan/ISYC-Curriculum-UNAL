@@ -244,5 +244,507 @@ const MATTERS = {
     group: mg.modelSystems,
     prerequisites: [2025987],
   },
+
+    2016375: {
+    id: 2016375,
+    name: "Programación Orientada a Objetos",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [[2015734, 2026573]], 
+    nextMatters: [2016699],
+  },
+  
+  2016699: {
+    id: 2016699,
+    name: "Estructuras de Datos",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016375], 
+    nextMatters: [2016701],
+  },
+  
+  2016701: {
+    id: 2016701,
+    name: "Ingeniería de Software I",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016699, 2016703, 2016353, ],
+    nextMatters: [2016702],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Ingeniería de Software II",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+    
+    2016716: {
+    id: 2016716,
+    name: "Arquitectura de Software",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016702], 
+  },
+    
+    2015734: {
+    id: 2015734,
+    name: "Programación de Computadores",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    nextMatters: [2016375],
+    optatives: [2026573],
+  },
+    
+    2026573: {
+    id: 2026573,
+    name: "Introducción a las ciencias de la computación y a la programación",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    nextMatters: [2016375],
+    optatives: [2015734],
+  },
+    
+    2025966: {
+    id: 2025966,
+    name: "Lenguajes de Programación",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016699, 2015174], 
+    optatives: [2027642, 2027628],
+  },
+    
+    2027642: {
+    id: 2027642,
+    name: "Compiladores",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016699, 2015174], 
+    optatives: [2025966, 2027628],
+  },
+    
+    2027628: {
+    id: 2027628,
+    name: "Teoría de Lenguajes Formales",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016699, 2015174], 
+    optatives: [2027642, 2025966],
+  },
+    
+    2016697: {
+    id: 2016697,
+    name: "Arquitectura de Computadores",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.computerInfrastructure,
+
+    prerequisites: [[2016698, 2016498]], 
+    nextMatters: [2016707],
+  },
+    
+    2016707: {
+    id: 2016707,
+    name: "Sistemas Operativos",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.computerInfrastructure,
+
+    prerequisites: [2016697], 
+  },
+    
+    2025967: {
+    id: 2025967,
+    name: "Redes de Computadores",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.computerInfrastructure,
+
+    prerequisites: [1000017, 2016699, 2016697], 
+  },
+    
+    2016722: {
+    id: 2016722,
+    name: "Computación Paralela y Distribuida",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.computerInfrastructure,
+
+    prerequisites: [2016696], 
+  },
+    
+    2025983: {
+    id: 2025983,
+    name: "Arquitectura de Infraestructura y gobierno de TICs",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.computerInfrastructure,
+
+    prerequisites: [2016702, 2025982], 
+  },
+    
+    2016698: {
+    id: 2016698,
+    name: "Elementos de Computadores",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2025975], 
+    nextMatters: [2016697],
+  },
+    
+    2016702: {
+    id: 2016702,
+    name: "Electrónica Digital I",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+    
+    2016702: {
+    id: 2016702,
+    name: "Bases de Datos",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Análisis de bases de datos",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Teoría de la Información y Sistemas de Comunicaciones",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Comunicaciones",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Sistemas de Información",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Sistemas de Información Gerencial",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Introducción a la Criptografía y a la Seguridad de la Información",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Introducción a la criptografía y a la teoría de información",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Teoría de la codificación",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Criptografía",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Análisis forense digital",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Computación Visual",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Lógica computacional",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Teoría de la recursión",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Introducción a los Sistemas Inteligentes",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  
+  2016702: {
+    id: 2016702,
+    name: "Inteligencia Artificial y Minirobots",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.softwareMethods,
+
+    prerequisites: [2016701, 2025967], 
+    nextMatters: [2016716],
+  },
+  2015556: {
+    id: 2015556,
+    name: "Cálculo integral en una variable",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000004,2016377]],
+    nextMatters: [1000006,2015162,1000013,2027877,2015178,2015703,2025986,2016047],
+    optatives: [1000005]
+  },
+  1000006: {
+    id: 1000006,
+    name: "Cálculo en Varias Variables",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000005,2015556]],
+    optatives: [2015162]
+  },
+  2015162: {
+    id: 2015162,
+    name: "Cálculo Vectorial",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000005,2015556]],
+    optatives: [1000006]
+  },
+  1000003: {
+    id: 1000003,
+    name: "Álgebra Lineal",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000004,2016377]],
+    optatives: [2015555]
+  },    
+  2015555: {
+    id: 2015555,
+    name: "Álgebra Lineal Básica",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.math,
+    prerequisites: [[1000004,2016377]],
+    optatives: [1000003]
+  },
+  1000013: {
+    id: 1000013,
+    name: "Probabilidad y Estadística Fundamental",
+    credits: 3, 
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.basis,
+    group: mg.probability,
+    prerequisites: [[1000005,2015556]],
+    optatives: [[2027877,2015178]]
+ },
+ 2027877: {
+    id: 2027877,
+    name: "Probabilidad Fundamental",
+    credits: 4, 
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.basis,
+    group: mg.probability,
+    prerequisites: [[1000005,2015556]],
+    optatives: [[1000013,2015178]]
+  }, 
 }
 export default MATTERS;
