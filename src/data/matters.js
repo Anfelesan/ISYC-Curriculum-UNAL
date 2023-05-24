@@ -269,75 +269,82 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
     prerequisites: [2025975], 
     nextMatters: [2016697],
+    optatives: [2016498],
   },
     
-    2016702: {
-    id: 2016702,
+    2016498: {
+    id: 2016498,
     name: "Electrónica Digital I",
-    credits: 3,
-    synchronous: 4,
-    asynchronous: 5,
+    credits: 4,
+    synchronous: 5,
+    asynchronous: 7,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
+    prerequisites: [2016495], 
     nextMatters: [2016716],
+    optatives: [2016698],
+      
   },
     
-    2016702: {
-    id: 2016702,
+    2016353: {
+    id: 2016353,
     name: "Bases de Datos",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
+    prerequisites: [2016375], 
     nextMatters: [2016716],
+    optatives: [2027641],
+      
   },
   
-  2016702: {
-    id: 2016702,
+    2027641: {
+    id: 2027641,
     name: "Análisis de bases de datos",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
+    prerequisites: [2016375], 
     nextMatters: [2016716],
+    optatives: [2016353],
+    
   },
   
-  2016702: {
-    id: 2016702,
+  2025994: {
+    id: 2025994,
     name: "Teoría de la Información y Sistemas de Comunicaciones",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [[1000013, 2015178], 2025967],
+    optatives: [2016492],
   },
   
-  2016702: {
-    id: 2016702,
+  2016492: {
+    id: 2016492,
     name: "Comunicaciones",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016503], 
+    optatives: [2025994],
   },
   
   2016702: {
@@ -347,231 +354,399 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016353,2027641], [2015702, 2016028], 2016703, 
+    nextMatters: [2025983],
   },
   
   2016702: {
     id: 2016702,
     name: "Sistemas de Información Gerencial",
-    credits: 3,
-    synchronous: 4,
-    asynchronous: 5,
+    credits: 4,
+    synchronous: 5,
+    asynchronous: 7,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016353,2027641], [2015702, 2016028], 2016703, 
+    nextMatters: [2025983],
   },
   
-  2016702: {
-    id: 2016702,
+  2025972: {
+    id: 2025972,
     name: "Introducción a la Criptografía y a la Seguridad de la Información",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016696],
   },
   
-  2016702: {
-    id: 2016702,
+  2027311: {
+    id: 2027311,
     name: "Introducción a la criptografía y a la teoría de información",
-    credits: 3,
-    synchronous: 4,
-    asynchronous: 5,
+    credits: 4,
+    synchronous: 5,
+    asynchronous: 7,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016696], 
   },
   
-  2016702: {
-    id: 2016702,
+  2027313: {
+    id: 2027313,
     name: "Teoría de la codificación",
-    credits: 3,
-    synchronous: 4,
-    asynchronous: 5,
+    credits: 4,
+    synchronous: 5,
+    asynchronous: 7,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016696], 
   },
   
-  2016702: {
-    id: 2016702,
+  2027310: {
+    id: 2027310,
     name: "Criptografía",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016696], 
   },
   
   2016702: {
     id: 2016702,
     name: "Análisis forense digital",
-    credits: 3,
-    synchronous: 4,
-    asynchronous: 5,
+    credits: 4,
+    synchronous: 5,
+    asynchronous: 7,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.computerInfrastructure,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016696], 
   },
   
-  2016702: {
-    id: 2016702,
+  2025960: {
+    id: 2025960,
     name: "Computación Visual",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.visualComputing,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016696], 
+    optatives: [2027629, 2019267],
   },
   
-  2016702: {
-    id: 2016702,
+  2027629: {
+    id: 2027629,
     name: "Lógica computacional",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.visualComputing,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016696], 
+    optatives: [2019267, 2025960],
   },
   
-  2016702: {
-    id: 2016702,
+  2019267: {
+    id: 2019267,
     name: "Teoría de la recursión",
-    credits: 3,
-    synchronous: 4,
-    asynchronous: 5,
+    credits: 4,
+    synchronous: 5,
+    asynchronous: 7,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.visualComputing,
 
-    prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    prerequisites: [2016696], 
+    optatives: [2025960, 2027629],
   },
   
-  2016702: {
-    id: 2016702,
+  2025995: {
+    id: 2025995,
     name: "Introducción a los Sistemas Inteligentes",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.smartSystems,
 
-    prerequisites: [2016701, 2025967], 
+    prerequisites: [2016696], 
     nextMatters: [2016716],
+    optatives: [2023251, 2027631, ,2028837 ,2017290],
   },
   
-  2016702: {
-    id: 2016702,
+  2023251: {
+    id: 2023251,
     name: "Inteligencia Artificial y Minirobots",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.dicipline,
-    group: mg.softwareMethods,
+    group: mg.smartSystems,
 
-    prerequisites: [2016701, 2025967], 
+    prerequisites: [2016696], 
     nextMatters: [2016716],
+    optatives: [2025995, 2027631,2028837 ,2017290],
   },
-  2015556: {
-    id: 2015556,
-    name: "Cálculo integral en una variable",
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
-    prerequisites: [[1000004,2016377]],
-    nextMatters: [1000006,2015162,1000013,2027877,2015178,2015703,2025986,2016047],
-    optatives: [1000005]
-  },
-  1000006: {
-    id: 1000006,
-    name: "Cálculo en Varias Variables",
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
-    prerequisites: [[1000005,2015556]],
-    optatives: [2015162]
-  },
-  2015162: {
-    id: 2015162,
-    name: "Cálculo Vectorial",
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
-    prerequisites: [[1000005,2015556]],
-    optatives: [1000006]
-  },
-  1000003: {
-    id: 1000003,
-    name: "Álgebra Lineal",
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
-    prerequisites: [[1000004,2016377]],
-    optatives: [2015555]
-  },    
-  2015555: {
-    id: 2015555,
-    name: "Álgebra Lineal Básica",
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
-    prerequisites: [[1000004,2016377]],
-    optatives: [1000003]
-  },
-  1000013: {
-    id: 1000013,
-    name: "Probabilidad y Estadística Fundamental",
-    credits: 3, 
+  
+  2027631: {
+    id: 2027631,
+    name: "Introducción a la Inteligencia Artificial",
+    credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.basis,
-    group: mg.probability,
-    prerequisites: [[1000005,2015556]],
-    optatives: [[2027877,2015178]]
- },
- 2027877: {
-    id: 2027877,
-    name: "Probabilidad Fundamental",
-    credits: 4, 
+    component: mc.dicipline,
+    group: mg.smartSystems,
+
+    prerequisites: [2016696], 
+    nextMatters: [2016716],
+    optatives: [2025995, 2023251, 2028837, 2017290],
+  },
+  
+  2028837: {
+    id: 2028837,
+    name: "Matemáticas del aprendizaje de máquinas",
+    credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.probability,
-    prerequisites: [[1000005,2015556]],
-    optatives: [[1000013,2015178]]
-  }, 
+    component: mc.dicipline,
+    group: mg.smartSystems,
+
+    prerequisites: [2016696], 
+    nextMatters: [2016716],
+    optatives: [2025995, 2023251, 2027631, 2017290],
+  },
+  
+  2017290: {
+    id: 2017290,
+    name: "Técnicas de Inteligencia Artificial",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.smartSystems,
+
+    prerequisites: [2016696], 
+    nextMatters: [2016716],
+    optatives: [2025995, 2023251, 2027631, 2028837],
+  },
+  
+  2016703: {
+    id: 2016703,
+    name: "Pensamiento Sistémico",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.modelSystems,
+
+    nextMatters: [[2025971,2015173]],
+  },
+  
+  2025969: {
+    id: 2025969,
+    name: "Modelos Estocásticos y Simulación en Computación y Comunicaciones",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.modelSystems,
+
+    prerequisites: [[2025971,2015173]], 
+    nextMatters: [2016716],
+  },
+  
+  2025970: {
+    id: 2025970,
+    name: "Modelos y Simulación",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.modelSystems,
+
+    prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375], 
+    nextMatters: [2016716],
+    optatives: [2019082],
+  },
+  
+  2019082: {
+    id: 2019082,
+    name: "Modelos matemáticos I",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.dicipline,
+    group: mg.modelSystems,
+
+    prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375], 
+    nextMatters: [2016716],
+    optatives: [2025970],
+  },
+  
+  2025971: {
+    id: 2025971,
+    name: "Optimización",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.modelSystems,
+
+    prerequisites: [[2025970, 2019082]], 
+    nextMatters: [2016716],
+    optatives: [2015173],
+  },
+  
+  2015173: {
+    id: 2015173,
+    name: "Introducción a la Optimización",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.dicipline,
+    group: mg.modelSystems,
+
+    prerequisites: [[2025970, 2019082]], 
+    nextMatters: [2019082],
+    optatives: [2025971],
+  },
+  
+  2025975: {
+    id: 2025975,
+    name: "Introducción a la Ingeniería de Sistemas y Computación",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.professionalContext,
+
+    nextMatters: [2016716],
+  },
+  
+  2024045: {
+    id: 2024045,
+    name: "Taller de Proyectos Interdisciplinarios",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.professionalContext,
+
+    specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
+    nextMatters: [2016716],
+    optatives: [2016600, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037],
+  },
+  
+  2016615: {
+    id: 2016615,
+    name: "Taller de Invención y Creatividad",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.professionalContext,
+
+    specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos",
+    nextMatters: [],
+    optatives: [2024045, 2026551, 2016007, 2016600, 2016599, 2016741, 2016037],
+  },
+  
+  2026551: {
+    id: 2026551,
+    name: "Creación y Gestión de Empresas",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.professionalContext,
+
+    specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos",
+    nextMatters: [2016716],
+    optatives: [2024045, 2016600, 2016007, 2016615, 2016599, 2016741, 2016037],
+  },
+  
+  2016007: {
+    id: 2016007,
+    name: "Fundamentos de Administración",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.dicipline,
+    group: mg.professionalContext,
+
+    specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos",
+    nextMatters: [2016716],
+    optatives: [2024045, 2026551, 2016600, 2016615, 2016599, 2016741, 2016037],
+  
+ 2016600: {
+    id: 2016600,
+    name: "Gestión Tecnológica",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.professionalContext,
+
+    specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
+    nextMatters: [2016716],
+    optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037],
+  },
+  
+  2016599: {
+    id: 2016599,
+    name: "Gestión de la Ciencia, la Tecnología y la Innovación",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.professionalContext,
+
+    specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
+    nextMatters: [2016716],
+    optatives: [2024045, 2026551, 2016007, 2016615, 2016600, 2016741, 2016037],
+  },
+  
+  2016741: {
+    id: 2016741,
+    name: "Finanzas",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.dicipline,
+    group: mg.professionalContext,
+
+    specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
+    nextMatters: [2016716],
+    optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016600, 2016037],
+  },
+  
+  2016037: {
+    id: 2016037,
+    name: "Finanzas Avanzadas",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.dicipline,
+    group: mg.professionalContext,
+
+    specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
+    nextMatters: [2016716],
+    optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016600],
+  },
+  
+
+
 }
 export default MATTERS;
