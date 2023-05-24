@@ -1,12 +1,18 @@
 .matterCard{
   width: 96%;
-  max-width: 200px;
+  max-width: 170px;
   overflow: hidden;
   border: solid 3px #000;
   border-radius: 8px;
   background-color: #fff;
-  margin: 10px;
 }
+
+@media (max-width: 1280px){
+  .matterCard{
+    max-width: 220px;
+  }
+}
+
 .matterCard-firstData-container{
   display: flex;
   border-bottom: solid 3px #000;
@@ -28,11 +34,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 30px;
+  min-height: 25px;
   margin: 0;
-  padding: 8px 2px;
+  padding: 2px 2px;
   border-bottom: solid 3px #000;
-  font-size: 1.04em;
+  font-size: 1.02em;
   text-align: center;
 }
 .matterCard-name{
@@ -57,15 +63,15 @@
   flex-grow: 1;
   text-align: center;
   font-weight: 600;
-  font-size: 1.08em;
+  font-size: 1.04em;
 }
 
 .matterCard-seeMore{
   border: none;
   background-color: #0099ff;
   width: 100%;
-  padding: 3px 1px;
-  font-size: 1.15rem;
+  padding: 1.5px 1px;
+  font-size: 1.1rem;
   color: #fff;
   cursor: pointer;
   transition: background-color .15s;
