@@ -273,7 +273,12 @@ const MATTERS = {
     prerequisites: [2025987],
   },
 
-    2016375: {
+  
+  
+  
+  
+  
+  2016375: {
     id: 2016375,
     name: "Programación Orientada a Objetos",
     credits: 3,
@@ -283,7 +288,7 @@ const MATTERS = {
     group: mg.softwareMethods,
 
     prerequisites: [[2015734, 2026573]], 
-    nextMatters: [2016699],
+    nextMatters: [2016699, 2016353, 2027641, 2025970, 2025970, 2027641],
   },
   
   2016699: {
@@ -296,7 +301,7 @@ const MATTERS = {
     group: mg.softwareMethods,
 
     prerequisites: [2016375], 
-    nextMatters: [2016701],
+    nextMatters: [2016696, 2016701, 2025966, 2027642, 2027628, 2025967],
   },
   
   2016701: {
@@ -308,7 +313,7 @@ const MATTERS = {
     component: mc.discipline,
     group: mg.softwareMethods,
 
-    prerequisites: [2016699, 2016703, 2016353, ],
+    prerequisites: [[2016353, 2027641], 2016703, 2016699],
     nextMatters: [2016702],
   },
   
@@ -322,10 +327,10 @@ const MATTERS = {
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
-    nextMatters: [2016716],
+    nextMatters: [2016716, 2025983],
   },
     
-    2016716: {
+  2016716: {
     id: 2016716,
     name: "Arquitectura de Software",
     credits: 3,
@@ -337,7 +342,7 @@ const MATTERS = {
     prerequisites: [2016702], 
   },
     
-    2015734: {
+  2015734: {
     id: 2015734,
     name: "Programación de Computadores",
     credits: 3,
@@ -350,7 +355,7 @@ const MATTERS = {
     optatives: [2026573],
   },
     
-    2026573: {
+  2026573: {
     id: 2026573,
     name: "Introducción a las ciencias de la computación y a la programación",
     credits: 3,
@@ -363,7 +368,7 @@ const MATTERS = {
     optatives: [2015734],
   },
     
-    2025966: {
+  2025966: {
     id: 2025966,
     name: "Lenguajes de Programación",
     credits: 3,
@@ -376,7 +381,7 @@ const MATTERS = {
     optatives: [2027642, 2027628],
   },
     
-    2027642: {
+  2027642: {
     id: 2027642,
     name: "Compiladores",
     credits: 3,
@@ -389,7 +394,7 @@ const MATTERS = {
     optatives: [2025966, 2027628],
   },
     
-    2027628: {
+  2027628: {
     id: 2027628,
     name: "Teoría de Lenguajes Formales",
     credits: 3,
@@ -402,7 +407,7 @@ const MATTERS = {
     optatives: [2027642, 2025966],
   },
     
-    2016697: {
+  2016697: {
     id: 2016697,
     name: "Arquitectura de Computadores",
     credits: 3,
@@ -412,10 +417,10 @@ const MATTERS = {
     group: mg.computerInfrastructure,
 
     prerequisites: [[2016698, 2016498]], 
-    nextMatters: [2016707],
+    nextMatters: [2016707, 2025967],
   },
     
-    2016707: {
+  2016707: {
     id: 2016707,
     name: "Sistemas Operativos",
     credits: 3,
@@ -427,7 +432,7 @@ const MATTERS = {
     prerequisites: [2016697], 
   },
     
-    2025967: {
+  2025967: {
     id: 2025967,
     name: "Redes de Computadores",
     credits: 3,
@@ -437,9 +442,10 @@ const MATTERS = {
     group: mg.computerInfrastructure,
 
     prerequisites: [1000017, 2016699, 2016697], 
+    nextMatters: [2016702, 2025994],
   },
-    
-    2016722: {
+   
+  2016722: {
     id: 2016722,
     name: "Computación Paralela y Distribuida",
     credits: 3,
@@ -451,7 +457,7 @@ const MATTERS = {
     prerequisites: [2016696], 
   },
     
-    2025983: {
+  2025983: {
     id: 2025983,
     name: "Arquitectura de Infraestructura y gobierno de TICs",
     credits: 3,
@@ -463,7 +469,7 @@ const MATTERS = {
     prerequisites: [2016702, 2025982], 
   },
     
-    2016698: {
+  2016698: {
     id: 2016698,
     name: "Elementos de Computadores",
     credits: 3,
@@ -477,7 +483,7 @@ const MATTERS = {
     optatives: [2016498],
   },
     
-    2016498: {
+  2016498: {
     id: 2016498,
     name: "Electrónica Digital I",
     credits: 4,
@@ -487,12 +493,11 @@ const MATTERS = {
     group: mg.computerInfrastructure,
 
     prerequisites: [2016495], 
-    nextMatters: [2016716],
     optatives: [2016698],
       
   },
     
-    2016353: {
+  2016353: {
     id: 2016353,
     name: "Bases de Datos",
     credits: 3,
@@ -502,11 +507,11 @@ const MATTERS = {
     group: mg.computerInfrastructure,
       
     prerequisites: [2016375], 
-    nextMatters: [2016716],
+    nextMatters: [2016701, 2025982, 2016053],
     optatives: [2027641],
   },
   
-    2027641: {
+  2027641: {
     id: 2027641,
     name: "Análisis de bases de datos",
     credits: 3,
@@ -516,7 +521,7 @@ const MATTERS = {
     group: mg.computerInfrastructure,
 
     prerequisites: [2016375], 
-    nextMatters: [2016716],
+    nextMatters: [2016701, 2025982, 2016053],
     optatives: [2016353],
   },
   
@@ -546,8 +551,8 @@ const MATTERS = {
     optatives: [2025994],
   },
   
-  2016702: {
-    id: 2016702,
+  2025982: {
+    id: 2025982,
     name: "Sistemas de Información",
     credits: 3,
     synchronous: 4,
@@ -555,21 +560,22 @@ const MATTERS = {
     component: mc.dicipline,
     group: mg.computerInfrastructure,
 
-    prerequisites: [2016353,2027641], [2015702, 2016028], 2016703, 
+    prerequisites: [[2016353,2027641], [2015702, 2016028], 2016703], 
     nextMatters: [2025983],
+    optatives: [2016053],
   },
   
-  2016702: {
-    id: 2016702,
+  2016053: {
+    id: 2016053,
     name: "Sistemas de Información Gerencial",
     credits: 4,
-    synchronous: 5,
-    asynchronous: 7,
+    synchronous: 4,
+    asynchronous: 8,
     component: mc.dicipline,
     group: mg.computerInfrastructure,
 
-    prerequisites: [2016353,2027641], [2015702, 2016028], 2016703, 
-    nextMatters: [2025983],
+    prerequisites: [[2016353,2027641], [2015702, 2016028], 2016703], 
+    optatives: [2025982],
   },
   
   2025972: {
@@ -582,30 +588,33 @@ const MATTERS = {
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696],
+    optatives: [2027311, 2027313, 2027310, 2027309],
   },
   
   2027311: {
     id: 2027311,
     name: "Introducción a la criptografía y a la teoría de información",
     credits: 4,
-    synchronous: 5,
-    asynchronous: 7,
+    synchronous: 4,
+    asynchronous: 4,
     component: mc.dicipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696], 
+    optatives: [2025972, 2027313, 2027310, 2027309],
   },
   
   2027313: {
     id: 2027313,
     name: "Teoría de la codificación",
     credits: 4,
-    synchronous: 5,
-    asynchronous: 7,
+    synchronous: 4,
+    asynchronous: 4,
     component: mc.dicipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696], 
+    optatives: [2025972, 2027311, 2027310, 2027309],
   },
   
   2027310: {
@@ -618,18 +627,20 @@ const MATTERS = {
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696], 
+    optatives: [2025972, 2027311, 2027313, 2027309],
   },
   
-  2016702: {
-    id: 2016702,
+  2027309: {
+    id: 2027309,
     name: "Análisis forense digital",
     credits: 4,
-    synchronous: 5,
-    asynchronous: 7,
+    synchronous: 4,
+    asynchronous: 4,
     component: mc.dicipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696], 
+    optatives: [2025972, 2027311, 2027313, 2027310],
   },
   
   2025960: {
@@ -662,8 +673,8 @@ const MATTERS = {
     id: 2019267,
     name: "Teoría de la recursión",
     credits: 4,
-    synchronous: 5,
-    asynchronous: 7,
+    synchronous: 4,
+    asynchronous: 4,
     component: mc.dicipline,
     group: mg.visualComputing,
 
@@ -681,7 +692,6 @@ const MATTERS = {
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
-    nextMatters: [2016716],
     optatives: [2023251, 2027631, ,2028837 ,2017290],
   },
   
@@ -695,7 +705,6 @@ const MATTERS = {
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
-    nextMatters: [2016716],
     optatives: [2025995, 2027631,2028837 ,2017290],
   },
   
@@ -709,7 +718,6 @@ const MATTERS = {
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
-    nextMatters: [2016716],
     optatives: [2025995, 2023251, 2028837, 2017290],
   },
   
@@ -723,7 +731,6 @@ const MATTERS = {
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
-    nextMatters: [2016716],
     optatives: [2025995, 2023251, 2027631, 2017290],
   },
   
@@ -737,7 +744,6 @@ const MATTERS = {
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
-    nextMatters: [2016716],
     optatives: [2025995, 2023251, 2027631, 2028837],
   },
   
@@ -750,7 +756,7 @@ const MATTERS = {
     component: mc.dicipline,
     group: mg.modelSystems,
 
-    nextMatters: [[2025971,2015173]],
+    nextMatters: [2016701, 2025982, 2016053],
   },
   
   2025969: {
@@ -763,7 +769,6 @@ const MATTERS = {
     group: mg.modelSystems,
 
     prerequisites: [[2025971,2015173]], 
-    nextMatters: [2016716],
   },
   
   2025970: {
@@ -776,7 +781,7 @@ const MATTERS = {
     group: mg.modelSystems,
 
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375], 
-    nextMatters: [2016716],
+    nextMatters: [2025971, 2015173, 2025987],
     optatives: [2019082],
   },
   
@@ -790,7 +795,7 @@ const MATTERS = {
     group: mg.modelSystems,
 
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375], 
-    nextMatters: [2016716],
+    nextMatters: [2025971, 2015173, 2025987],
     optatives: [2025970],
   },
   
@@ -804,7 +809,7 @@ const MATTERS = {
     group: mg.modelSystems,
 
     prerequisites: [[2025970, 2019082]], 
-    nextMatters: [2016716],
+    nextMatters: [2025969, 2025987],
     optatives: [2015173],
   },
   
@@ -818,7 +823,7 @@ const MATTERS = {
     group: mg.modelSystems,
 
     prerequisites: [[2025970, 2019082]], 
-    nextMatters: [2019082],
+    nextMatters: [2025969, 2025987],
     optatives: [2025971],
   },
   
@@ -831,7 +836,7 @@ const MATTERS = {
     component: mc.dicipline,
     group: mg.professionalContext,
 
-    nextMatters: [2016716],
+    nextMatters: [2016698],
   },
   
   2024045: {
@@ -844,7 +849,6 @@ const MATTERS = {
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
-    nextMatters: [2016716],
     optatives: [2016600, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037],
   },
   
@@ -858,7 +862,6 @@ const MATTERS = {
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos",
-    nextMatters: [],
     optatives: [2024045, 2026551, 2016007, 2016600, 2016599, 2016741, 2016037],
   },
   
@@ -872,9 +875,8 @@ const MATTERS = {
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos",
-    nextMatters: [2016716],
     optatives: [2024045, 2016600, 2016007, 2016615, 2016599, 2016741, 2016037],
-  },
+  },  
   
   2016007: {
     id: 2016007,
@@ -886,9 +888,9 @@ const MATTERS = {
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos",
-    nextMatters: [2016716],
     optatives: [2024045, 2026551, 2016600, 2016615, 2016599, 2016741, 2016037],
-  
+  }, 
+    
  2016600: {
     id: 2016600,
     name: "Gestión Tecnológica",
@@ -899,7 +901,6 @@ const MATTERS = {
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
-    nextMatters: [2016716],
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037],
   },
   
@@ -913,7 +914,6 @@ const MATTERS = {
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
-    nextMatters: [2016716],
     optatives: [2024045, 2026551, 2016007, 2016615, 2016600, 2016741, 2016037],
   },
   
@@ -927,7 +927,6 @@ const MATTERS = {
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
-    nextMatters: [2016716],
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016600, 2016037],
   },
   
@@ -941,11 +940,47 @@ const MATTERS = {
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
-    nextMatters: [2016716],
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016600],
   },
   
+ 2025974: {
+    id: 2025974,
+    name: "Trabajo de Grado - Trabajo Investigativo",
+    credits: 6,
+    synchronous: 2,
+    asynchronous: 16,
+    component: mc.dicipline,
+    group: mg.degreeWork,
 
+   specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
+   optatives: [2025975, 2016843],
+  },
+    
+  2025975: {
+    id: 2025975,
+    name: "Trabajo de Grado - Práctica de Extensión",
+    credits: 6,
+    synchronous: 2,
+    asynchronous: 16,
+    component: mc.dicipline,
+    group: mg.degreeWork,
+
+    specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
+    optatives: [2016843, 2025974],
+  },
+    
+  2016843: {
+    id: 2016843,
+    name: "Trabajo de Grado - Asignaturas de Posgrado",
+    credits: 6,
+    synchronous: 4,
+    asynchronous: 14,
+    component: mc.dicipline,
+    group: mg.degreeWork,
+
+    specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
+    optatives: [2025975, 2025974],
+  },
 
 }
 export default MATTERS;
