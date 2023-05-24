@@ -1,6 +1,6 @@
 import CURRICULUM_DATA from "../data/curriculumData"
 
-export default getFreeDict = ([credits, synchronous, asynchronous]) => {
+const getFreeDict = ([credits, synchronous, asynchronous]) => {
   return{
     credits: credits,
     synchronous: synchronous,
@@ -9,3 +9,4 @@ export default getFreeDict = ([credits, synchronous, asynchronous]) => {
     group: CURRICULUM_DATA.groups.free.free
   }
 }
+export default getFreeDict

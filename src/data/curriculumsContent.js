@@ -17,7 +17,7 @@ export const mainCurriculumContent = [
     syncronous: 2,
     asynchronous: 16,
     component: CURRICULUM_DATA.components.discipline,
-    group: CURRICULUM_DATA.groups.degreeWork
+    group: CURRICULUM_DATA.groups.discipline.degreeWork
   }] //Semester 10
 ];
 export const softwareEngineeringContent = [];
