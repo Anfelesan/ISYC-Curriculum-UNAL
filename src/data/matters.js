@@ -279,7 +279,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [[2015734, 2026573]], 
@@ -292,7 +292,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016375], 
@@ -305,7 +305,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016699, 2016703, 2016353, ],
@@ -318,7 +318,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -331,7 +331,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016702], 
@@ -343,7 +343,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     nextMatters: [2016375],
@@ -356,7 +356,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     nextMatters: [2016375],
@@ -369,7 +369,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016699, 2015174], 
@@ -382,7 +382,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016699, 2015174], 
@@ -395,7 +395,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016699, 2015174], 
@@ -408,7 +408,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [[2016698, 2016498]], 
@@ -421,7 +421,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016697], 
@@ -433,7 +433,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [1000017, 2016699, 2016697], 
@@ -445,7 +445,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696], 
@@ -457,7 +457,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016702, 2025982], 
@@ -469,7 +469,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2025975], 
@@ -482,7 +482,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -495,7 +495,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -508,7 +508,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -521,7 +521,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -534,7 +534,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -547,7 +547,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -560,7 +560,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -573,7 +573,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -586,7 +586,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -599,7 +599,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -612,7 +612,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -625,7 +625,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -638,7 +638,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -651,7 +651,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -664,7 +664,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -677,7 +677,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -690,7 +690,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.softwareMethods,
 
     prerequisites: [2016701, 2025967], 
@@ -707,6 +707,11 @@ const MATTERS = {
     prerequisites: [[1000004,2016377]],
     nextMatters: [1000006,2015162,1000013,2027877,2015178,2015703,2025986,2016047],
     optatives: [1000005]
+  },
+  1000005: {
+    id: 1000005,
+    name: "Cálculo integral",
+    credits: 4
   },
   1000006: {
     id: 1000006,
