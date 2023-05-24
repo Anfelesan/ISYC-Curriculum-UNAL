@@ -1,7 +1,7 @@
 import MATTERS from "../../data/matters";
 import './MatterCard.css';
 
-//Only { id } is obligatory, others are optional, and if their value are undefined, will be crawled at MATTERS
+//All options are optional, and if their value are undefined, will be crawled at MATTERS if id is defined
 const MatterCard = ({id, credits, synchronous, asynchronous, name, group, component, handleModal}) => {
   const matterInfo = MATTERS[id] ?? null;
   //Props are immutable, so new constants are declared
