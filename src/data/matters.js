@@ -1261,11 +1261,11 @@ const MATTERS = {
     group: mg.degreeWork,
 
    specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
-   optatives: [2025975, 2016843],
+   optatives: [2025973, 2016843],
   },
     
-  2025975: {
-    id: 2025975,
+  2025973: {
+    id: 2025973,
     name: "Trabajo de Grado - Práctica de Extensión",
     credits: 6,
     synchronous: 2,
@@ -1286,7 +1286,7 @@ const MATTERS = {
     component: mc.discipline,
     group: mg.degreeWork,
     specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
-    optatives: [2025975, 2025974],
+    optatives: [2025973, 2025974],
   },
   
   2016763: {
