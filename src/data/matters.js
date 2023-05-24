@@ -581,11 +581,6 @@ const MATTERS = {
     prerequisites: [2025987],
   },
 
-  
-  
-  
-  
-  
   2016375: {
     id: 2016375,
     name: "Programación Orientada a Objetos",
@@ -1245,6 +1240,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
+    component: mc.basis,
+    group: mg.probability,
+    prerequisites: [[1000005,2015556]],
+    optatives: [[1000013,2015178]],
     component: mc.discipline,
     group: mg.professionalContext,
 
@@ -1286,11 +1285,277 @@ const MATTERS = {
     asynchronous: 14,
     component: mc.dicipline,
     group: mg.degreeWork,
-
     specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
     optatives: [2025975, 2025974],
   },
-
+  
+  2016763: {
+    id: 2016763,
+    name: "Práctica estudiantil II",
+    credits: 6,
+    synchronous: 8,
+    asynchronous: 10,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
+    nextMatters: [],
+    optatives: []
+  },
+    
+  2016764: {
+    id: 2016764,
+    name: "Práctica estudiantil III",
+    credits: 9,
+    synchronous: 12,
+    asynchronous: 15,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
+    nextMatters: [],
+    optatives: []
+  },
+  1000070: {
+    id: 1000070,
+    name: "Práctica Colombia I",
+    credits: 3,
+    synchronous: 1,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
+    nextMatters: [],
+    optatives: []
+  },
+  1000071: {
+    id: 1000071,
+    name: "Práctica Colombia II",
+    credits: 6,
+    synchronous: 1,
+    asynchronous: 17,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
+    nextMatters: [],
+    optatives: []
+  },
+  1000072: {
+    id: 1000070,
+    name: "Práctica Colombia III",
+    credits: 9,
+    synchronous: 1,
+    asynchronous: 26,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: specialPrerequisites:"Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
+    nextMatters: [],
+    optatives: []
+  },
+  2015168: {
+    id: 2015168,
+    name: "Fundamentos de matemáticas",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [],
+    nextMatters: [2015181,2025819],
+    optatives: []
+  },
+  2015181: {
+    id: 2015181,
+    name: "Sistemas Numéricos",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [2015168],
+    nextMatters: [2015155],
+    optatives: []
+  },
+  2027641: {
+    id: 2027641,
+    name: "Análisis de bases de datos",
+    credits: 3,
+    synchronous: 4,
+    asynchronous:5,
+    component: mc.free,
+    group: mg.computerInfrastructure,
+    prerequisites: [2016375],
+    nextMatters: [],
+    optatives: []
+  },
+  2025819: {
+    id: 2025819,
+    name: "Introducción a la Teoría de Conjuntos",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.computerScience,
+    prerequisites: [2015168],
+    nextMatters: [2026548],
+    optatives: []
+  },
+  2026548: {
+    id: 2026548,
+    name: "Introducción al Análisis Combinatorio",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.computerScience,
+    prerequisites: [2015168],
+    nextMatters: [],
+    optatives: []
+  },
+  2026519: {
+    id: 2026519,
+    name: "Ecuaciones en Diferencias Finitas y Sistemas Dinámicos",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [1000003,2015555,2015181],
+    nextMatters: [],
+    optatives: []
+  },
+  2016366: {
+    id: 2016366,
+    name: "Estadística Descriptiva y Exploratoria",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [],
+    nextMatters: [],
+    optatives: []
+  },
+  2016379: {
+    id: 2016379,
+    name: "Inferencia Estadística",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [1000013,2015178],
+    nextMatters: [2016360],
+    optatives: []
+  },
+  
+  2016342: {
+    id: 2016342,
+    name: "Cálculo de ecuaciones diferenciales ordinarias",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [1000005,2015556,1000003,2015555],
+    nextMatters: [2016506,2015159],
+    optatives: []
+  },
+  2016495: {
+    id: 2016495,
+    name: "Electrónica Análoga I",
+    credits: 4,
+    synchronous: 6,
+    asynchronous: 6,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [2016489],
+    nextMatters: [2016498],
+    optatives: []
+  },
+  2016489: {
+    id: 2016489,
+    name: "Circuitos Eléctricos I",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [2016509,1000004,2016377],
+    nextMatters: [2016495],
+    optatives: []
+  },
+  2016509: {
+    id: 2016509,
+    name: "Taller de Ingeniería Electrónica",
+    credits: 2,
+    synchronous: 4,
+    asynchronous: 2,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [2025975],
+    nextMatters: [2016489],
+    optatives: []
+  },
+  2016503: {
+    id: 2016503,
+    name: "Líneas y Antenas",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [2016487],
+    nextMatters: [2016492],
+    optatives: []
+  },
+  2016487: {
+    id: 2016487,
+    name: "Campos Electromagnéticos",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [1000006,2015162,1000017,2016506],
+    nextMatters: [2016503],
+    optatives: []
+  },
+  2016506: {
+    id: 2016506,
+    name: "Señales y Sistemas I",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [2016489,2016342],
+    nextMatters: [2016506],
+    optatives: []
+  },
+  
+  2015159: {
+    id: 2015159,
+    name: "Variable Compleja",
+    credits: 4,
+    synchronous: 4,
+    asynchronous: 8,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [2016342],
+    nextMatters: [2016507],
+    optatives: []
+  },
+  2016507: {
+    id: 2016507,
+    name: "Señales y Sistemas II",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.free,
+    group: mg.free,
+    prerequisites: [2015159, 2016506],
+    nextMatters: [2017287,2016493],
+    optatives: []
+  },
 
 }
 export default MATTERS;
