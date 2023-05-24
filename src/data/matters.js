@@ -475,7 +475,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2025975], 
@@ -489,7 +489,7 @@ const MATTERS = {
     credits: 4,
     synchronous: 5,
     asynchronous: 7,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016495], 
@@ -503,7 +503,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
       
     prerequisites: [2016375], 
@@ -517,7 +517,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016375], 
@@ -531,7 +531,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [[1000013, 2015178], 2025967],
@@ -544,7 +544,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016503], 
@@ -557,7 +557,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [[2016353,2027641], [2015702, 2016028], 2016703], 
@@ -584,7 +584,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696],
@@ -608,6 +608,7 @@ const MATTERS = {
     id: 2027313,
     name: "Teoría de la codificación",
     credits: 4,
+
     synchronous: 4,
     asynchronous: 4,
     component: mc.dicipline,
@@ -623,7 +624,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.computerInfrastructure,
 
     prerequisites: [2016696], 
@@ -649,7 +650,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.visualComputing,
 
     prerequisites: [2016696], 
@@ -662,7 +663,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.visualComputing,
 
     prerequisites: [2016696], 
@@ -688,7 +689,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
@@ -701,7 +702,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
@@ -714,7 +715,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
@@ -727,7 +728,7 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
@@ -740,7 +741,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.smartSystems,
 
     prerequisites: [2016696], 
@@ -753,7 +754,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.modelSystems,
 
     nextMatters: [2016701, 2025982, 2016053],
@@ -765,7 +766,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.modelSystems,
 
     prerequisites: [[2025971,2015173]], 
@@ -777,7 +778,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.modelSystems,
 
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375], 
@@ -791,7 +792,7 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.modelSystems,
 
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375], 
@@ -805,7 +806,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.modelSystems,
 
     prerequisites: [[2025970, 2019082]], 
@@ -819,7 +820,7 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.modelSystems,
 
     prerequisites: [[2025970, 2019082]], 
@@ -833,7 +834,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.professionalContext,
 
     nextMatters: [2016698],
@@ -845,7 +846,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
@@ -858,7 +859,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos",
@@ -871,7 +872,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos",
@@ -884,20 +885,20 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos",
     optatives: [2024045, 2026551, 2016600, 2016615, 2016599, 2016741, 2016037],
-  }, 
-    
- 2016600: {
+  },
+  
+  2016600: {
     id: 2016600,
     name: "Gestión Tecnológica",
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
@@ -910,7 +911,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
@@ -923,7 +924,7 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
@@ -936,13 +937,13 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.dicipline,
+    component: mc.discipline,
     group: mg.professionalContext,
 
     specialPrerequisites: "Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos", 
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016600],
   },
-  
+   
  2025974: {
     id: 2025974,
     name: "Trabajo de Grado - Trabajo Investigativo",
@@ -981,6 +982,7 @@ const MATTERS = {
     specialPrerequisites: "Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional",
     optatives: [2025975, 2025974],
   },
+
 
 }
 export default MATTERS;
