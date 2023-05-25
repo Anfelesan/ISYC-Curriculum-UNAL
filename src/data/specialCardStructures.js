@@ -15,5 +15,5 @@ export const degreWorkDict = {
   synchronous: 2,
   asynchronous: 16,
   component: CURRICULUM_DATA.components.discipline,
-  group: CURRICULUM_DATA.groups.degreeWork
+  group: CURRICULUM_DATA.groups.discipline.degreeWork
 }
