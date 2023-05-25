@@ -5,6 +5,7 @@
   border: solid 3px #000;
   border-radius: 8px;
   background-color: #fff;
+  transform: scale(.9);
 }
 
 @media (max-width: 1280px){

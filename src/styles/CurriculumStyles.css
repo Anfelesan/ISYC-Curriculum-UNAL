@@ -12,8 +12,7 @@
   border-radius: 10px;
 }
 .semester-matters-container{
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 10px;
   width: 100%;
   align-items: center;
