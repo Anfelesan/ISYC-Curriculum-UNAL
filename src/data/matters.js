@@ -1289,6 +1289,17 @@ const MATTERS = {
     optatives: [2025973, 2025974],
   },
   
+    2016762: {
+    id: 2016762,
+    name: "Práctica estudiantil I",
+    credits: 3,
+    synchronous: 4,
+    asynchronous: 5,
+    component: mc.free,
+    group: mg.free,
+    specialPrerequisites: "Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional",
+  },
+  
   2016763: {
     id: 2016763,
     name: "Práctica estudiantil II",
