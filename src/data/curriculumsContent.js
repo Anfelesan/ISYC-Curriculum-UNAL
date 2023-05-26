@@ -26,7 +26,7 @@ export const softwareEngineeringContent = [
   [2019773, 2019795, 2019762, degreWorkDict] //Semester 10
 ];
 //Malla de Sistemas inteligentes
-export const SmartSistemsContent = [
+export const smartSystemsContent = [
   [1000004, 2025975, 2015734, 2016703, getFreeDict([3, 4, 5])], //Semester 1
   [1000019, 1000005, 1000003, 2016375], //Semester 2
   [1000017, 1000006, 2025963, 2016353, 2016698], //Semester 3
@@ -39,7 +39,7 @@ export const SmartSistemsContent = [
   [2019779, 2026442, getFreeDict([2, 4, 2]), degreWorkDict] //Semester 10
 ];
 //malla de Bioinformática, Biología Computacional y Computación Bioinspirada
-export const BioComputingContent = [
+export const bioComputingContent = [
   [1000004, 2025975, 2015734, 2016703], //Semester 1
   [1000019, 1000005, 1000003, 2016375, 1000009], //Semester 2
   [1000017, 1000006, 2025963, 2016353, 2016698], //Semester 3
@@ -52,7 +52,7 @@ export const BioComputingContent = [
   [getFreeDict([2, 4, 2]), 2019799, 2016839, degreWorkDict] //Semester 10
 ];
 //malla de Telecomunicaciones
-export const TelecomunicationsContent = [
+export const telecommunicationsContent = [
   [1000004, 2025975, 2015734, 2016703, getFreeDict([3, 4, 5])], //Semester 1
   [1000019, 1000005, 1000003, 2016375, 2016698], //Semester 2
   [1000017, 1000006, 2025963, 2016353, 2016697], //Semester 3
@@ -79,7 +79,7 @@ export const TICGovermentContent = [
   [getFreeDict([2, 4, 2]), 2025440, 2011263, 2026502, degreWorkDict] //Semester 10
 ];
 // malla de Modelos, Optimización y Simulación
-export const MoOpAndSimulationContent = [
+export const moOpAndSimulationContent = [
   [1000004, 2025975, 2015734, 2016703, 2016592], //Semester 1
   [1000019, 1000005, 1000003, 2016375, 2015168], //Semester 2
   [1000017, 2015162, 2025963, 2016353, 2015181, 2016698], //Semester 3
@@ -92,7 +92,7 @@ export const MoOpAndSimulationContent = [
   [getFreeDict([3, 4, 5]), getFreeDict([3, 4, 5]), 2016605, degreWorkDict] //Semester 10
 ];
 // malla de Ciencias de la Computación
-export const ComputerCienceContent = [
+export const computerCienceContent = [
   [1000004, 2025975, 2026573, 2016703, getFreeDict([3, 4, 5])], //Semester 1
   [1000019, 1000005, 2015555, 2015168], //Semester 2
   [1000017, 2016519, 2015181, 2016375, 2025819], //Semester 3
@@ -105,7 +105,7 @@ export const ComputerCienceContent = [
   [getFreeDict([2, 4, 2]), 2025969, 2015156, degreWorkDict] //Semester 10
 ];
 //malla de Hardware
-export const HardwareContent = [
+export const hardwareContent = [
   [1000004, 2025975, 2015734, 2016703, getFreeDict([3, 4, 5])], //Semester 1
   [1000019, 1000005, 1000003, 2016375, 2016509], //Semester 2
   [1000017, 1000006, 2025963, 2016353, 2016489], //Semester 3
@@ -118,7 +118,7 @@ export const HardwareContent = [
   [getFreeDict([2, 4, 2]), 2025983, 2016509, degreWorkDict] //Semester 10
 ];
 //malla de Visión y Robótica
-export const RoboticVisionContent = [
+export const roboticVisionContent = [
   [1000004, 2025975, 2015734, 2016703, getFreeDict([3, 4, 5])], //Semester 1
   [1000019, 1000005, 1000003, 2016375, 2016509], //Semester 2
   [1000017, 1000006, 2025963, 2016353, 2016489], //Semester 3
@@ -131,7 +131,7 @@ export const RoboticVisionContent = [
   [getFreeDict([3, 4, 5]), 2016770, 2025983, degreWorkDict] //Semester 10
 ];
 //malla de Ingeniería Biomédica
-export const BiomedicIngContent = [
+export const biomedicIngContent = [
   [1000004, 2025975, 2015734, 2016703], //Semester 1
   [1000019, 1000005, 1000003, 2016375, 1000009], //Semester 2
   [1000017, 1000006, 2025963, 2016353, 2016509], //Semester 3
@@ -144,7 +144,7 @@ export const BiomedicIngContent = [
   [getFreeDict([1, 1, 2]), 2016765, 2025983, degreWorkDict] //Semester 10
 ];
 //malla de Computación Interactiva y Creativa, Medios Digitales y Animación
-export const MultimediaContent = [
+export const multimediaContent = [
   [1000004, 2025975, 2015734, 2016703, getFreeDict([3, 4, 5])], //Semester 1
   [1000019, 1000005, 1000003, 2016375, 2016070], //Semester 2
   [1000017, 1000006, 2025963, 2016353, 2016698], //Semester 3
@@ -157,7 +157,7 @@ export const MultimediaContent = [
   [2026511, 2025983, getFreeDict([3, 4, 5]), degreWorkDict] //Semester 10
 ];
 //malla de Ingeniería y ciencias de datos
-export const DataIngContent = [
+export const dataIngContent = [
   [1000004, 2025975, 2015734, 2016703, getFreeDict([3, 4, 5])], //Semester 1
   [1000019, 1000005, 1000003, 2016375], //Semester 2
   [1000017, 1000006, 2025963, 2016353, 2016698], //Semester 3
