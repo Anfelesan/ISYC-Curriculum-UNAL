@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import NotFound from "./pages/NotFound";
-import MainCurriculum from "./pages/mainCurriculum";
+import MainCurriculum from "./pages/MainCurriculum";
 import SoftwareEngineering from "./pages/SoftwareEngineering";
 import SmartSystems from "./pages/SmartSystems";
 import Bioinformatics from "./pages/Bioinformatics";
