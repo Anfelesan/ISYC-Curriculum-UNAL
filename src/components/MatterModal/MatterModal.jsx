@@ -57,7 +57,7 @@ const MatterModal = ({id, handleModal}) => {
           : null}
           {optatives ?
             <ListDiv title="Optativas" list={optatives} />
-          : null}
+          : <MandatoryNotice />}
         </div>
       </div>
     </ModalBackground>
@@ -68,11 +68,25 @@ const ListDiv = ({title, list}) => {
     <div className='matterModal-list-div'>
     <span className='matterModal-list-title'>{title}</span>
     <ul className='matterModal-list'>
-      {list.map(matterId => 
-        <li key={matterId}>{MATTERS[matterId].name}</li>
+      {list.map((listItem, index) => 
+        listItem instanceof Array
+        ? <li key={index}>{listItem.map((matterId, i) =>
+          <span key={matterId}>
+            {i === 0 ? null : <span className='matterModal-ist-separatorLetter'>O</span>}
+            <span>{MATTERS[matterId].name}</span>
+          </span>
+        )}</li>
+        : <li key={listItem}>{MATTERS[listItem].name}</li>
       )}
     </ul>
   </div>
   );
+}
+const MandatoryNotice = () => {
+  return (
+    <div className='matterModal-list-div'>
+      <span className='matterModal-list-title'>Obligatoria (No tiene optativas)</span>
+    </div>
+  ) ;
 }
 export default MatterModal;
