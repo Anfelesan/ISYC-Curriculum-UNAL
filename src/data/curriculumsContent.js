@@ -76,7 +76,7 @@ export const TICGovermentContent = [
   [2025969, 2025983, 2025994, 2016716, 2025995, 2025966], //Semester 7
   [2024045, 2016722, 2025972, 2025960, 2026208], //Semester 8
   [2026231, 2026537, 2026538], //Semester 9
-  [getFreeDict([2, 4, 2]), 2025440, 2011263, 2026502, degreWorkDict] //Semester 10
+  [getFreeDict([2, 4, 2]), 2026440, 2011263, 2026502, degreWorkDict] //Semester 10
 ];
 // malla de Modelos, Optimización y Simulación
 export const moOpAndSimulationContent = [
@@ -126,7 +126,7 @@ export const roboticVisionContent = [
   [2025970, 2015702, 2016699, 2016506, 2016498], //Semester 5
   [2025971, 2015159, 2016701, 2015174, 2016697], //Semester 6
   [2025969, 2015970, 2016507, 2025967, 2016696, 2016707], //Semester 7
-  [2016722, 2025994, 2026702, 2025966, 2025995], //Semester 8
+  [2016722, 2025994, 2016702, 2025966, 2025995], //Semester 8
   [2024045, 2025960, 2016716, 2025982, 2025972], //Semester 9
   [getFreeDict([3, 4, 5]), 2016770, 2025983, degreWorkDict] //Semester 10
 ];
@@ -138,7 +138,7 @@ export const biomedicIngContent = [
   [1000013, 2015703, 2025964, 1000007, 2016489], //Semester 4
   [2025970, 2015702, 2016699, 2016506, 2016698], //Semester 5
   [2025971, 2015159, 2016701, 2015174, 2016697], //Semester 6
-  [2025969, 2017970, 2016507, 2025697, 2016696, 2016707], //Semester 7
+  [2025969, 2015970, 2016507, 2025967, 2016696, 2016707], //Semester 7
   [2024045, 2016722, 2025994, 2016702, 2025966, 2025995], //Semester 8
   [2023644, 2025960, 2016716, 2025982, 2025972], //Semester 9
   [getFreeDict([1, 1, 2]), 2016765, 2025983, degreWorkDict] //Semester 10

@@ -147,7 +147,7 @@ const MATTERS = {
     group: mg.probability,
     prerequisites: [[1000005,2015556]],
     nextMatters: [2025986,2025994,2025970,2019082,2016379],
-    optatives: [[2027877,2015178]]
+    optatives: [2027877,2015178]
  },
  2027877: {
     id: 2027877,
@@ -159,7 +159,7 @@ const MATTERS = {
     group: mg.probability,
     prerequisites: [[1000005,2015556]],
     nextMatters: [2025986],
-    optatives: [[1000013,2015178]]
+    optatives: [1000013,2015178]
   }, 
  2015178: {
     id: 2015178,
@@ -1243,7 +1243,7 @@ const MATTERS = {
     component: mc.basis,
     group: mg.probability,
     prerequisites: [[1000005,2015556]],
-    optatives: [[1000013,2015178]],
+    optatives: [1000013,2015178],
     component: mc.discipline,
     group: mg.professionalContext,
 
