@@ -53,7 +53,7 @@ const MatterModal = ({id, handleModal}) => {
             <ListDiv title="Prerrequisitos" list={prerequisites}/>
           : null}
           {nextMatters ?
-            <ListDiv title="Próximas asignaturas" list={nextMatters}/>
+            <ListDiv title="Es requisito para ver" list={nextMatters}/>
           : null}
           {optatives ?
             <ListDiv title="Optativas" list={optatives} />
