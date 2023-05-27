@@ -72,10 +72,12 @@ const ListDiv = ({title, list}) => {
         return listItem instanceof Array
         ? <li key={index}>
             {listItem.map((matterId, i) => {
-              <span key={matterId}>
-                {i === 0 ? null : <span className='matterModal-ist-separatorLetter'>O</span>}
-                <span>{MATTERS[matterId].name}</span>
-              </span>
+              return (
+                <span key={matterId}>
+                  {i === 0 ? null : <span className='matterModal-ist-separatorLetter'>O</span>}
+                  <span>{MATTERS[matterId].name}</span>
+                </span>
+              ) ;
             })}
           </li>
         : <li key={listItem}>{MATTERS[listItem].name}</li>
