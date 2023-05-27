@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import MatterModal from '../components/MatterModal/MatterModal';
-import CurriculumContent from '../components/CurriculumContent/CurriculumContent';
-import { moOpAndSimulationContent } from '../data/curriculumsContent';
+import { useState } from 'react'
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+import MatterModal from '../components/MatterModal/MatterModal'
+import CurriculumContent from '../components/CurriculumContent/CurriculumContent'
+import { moOpAndSimulationContent } from '../data/curriculumsContent'
 
 const Models = () => {
-  const [matterIdModal, setMatterIdModal] = useState(null);
-  const handleModal = (id) => setMatterIdModal(id);
-  
+  const [matterIdModal, setMatterIdModal] = useState(null)
+  const handleModal = (id) => setMatterIdModal(id)
+
   return (
     <>
       <Header />
@@ -18,6 +18,6 @@ const Models = () => {
       </main>
       <Footer />
     </>
-  );
+  )
 }
-export default Models;
+export default Models

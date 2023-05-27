@@ -1,37 +1,38 @@
-.matterCard{
+.matterCard {
   width: 96%;
   max-width: 170px;
   overflow: hidden;
   border: solid 3px #000;
   border-radius: 8px;
   background-color: #fff;
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
-@media (max-width: 1280px){
-  .matterCard{
+@media (max-width: 1280px) {
+  .matterCard {
     max-width: 220px;
   }
 }
 
-.matterCard-firstData-container{
+.matterCard-firstData-container {
   display: flex;
   border-bottom: solid 3px #000;
 }
-.matterCard-firstData-container span{
+.matterCard-firstData-container span {
   flex-grow: 1;
   text-align: center;
   font-weight: 800;
 }
-.matterCard-credits{
+.matterCard-credits {
   background-color: #000;
   color: #fff;
 }
-.matterCard-synchronous{
+.matterCard-synchronous {
   border-right: solid 3px #000;
 }
 
-.matterCard-name, .matterCard-group{
+.matterCard-name,
+.matterCard-group {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,32 +43,32 @@
   font-size: 1.02em;
   text-align: center;
 }
-.matterCard-name{
+.matterCard-name {
   font-weight: 500;
 }
-.matterCard-group{
+.matterCard-group {
   font-weight: 400;
 }
 
-.matterCard-idComponent-container{
+.matterCard-idComponent-container {
   display: flex;
   justify-content: space-between;
   border-bottom: solid 3px #000;
   min-height: 20px;
 }
-.matterCard-id{
+.matterCard-id {
   flex-grow: 2;
   border-right: solid 3px #000;
   text-align: center;
 }
-.matterCard-component{
+.matterCard-component {
   flex-grow: 1;
   text-align: center;
   font-weight: 600;
   font-size: 1.04em;
 }
 
-.matterCard-seeMore{
+.matterCard-seeMore {
   border: none;
   background-color: #0099ff;
   width: 100%;
@@ -75,8 +76,8 @@
   font-size: 1.1rem;
   color: #fff;
   cursor: pointer;
-  transition: background-color .15s;
+  transition: background-color 0.15s;
 }
-.matterCard-seeMore:hover{
+.matterCard-seeMore:hover {
   background-color: #0af;
 }

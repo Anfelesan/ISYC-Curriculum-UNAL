@@ -1,23 +1,23 @@
-import MATTERS from '../../data/matters';
-import ModalBackground from '../ModalBackground/ModalBackground';
+import MATTERS from '../../data/matters'
+import ModalBackground from '../ModalBackground/ModalBackground'
 import './MatterModal.css'
 
-const MatterModal = ({id, handleModal}) => {
-  const {credits, name, synchronous, asynchronous, group, component} = MATTERS[id];
-  const prerequisites = MATTERS[id]?.prerequisites;
-  const nextMatters = MATTERS[id]?.nextMatters;
-  const optatives = MATTERS[id]?.optatives;
+const MatterModal = ({ id, handleModal }) => {
+  const { credits, name, synchronous, asynchronous, group, component } = MATTERS[id]
+  const prerequisites = MATTERS[id]?.prerequisites
+  const nextMatters = MATTERS[id]?.nextMatters
+  const optatives = MATTERS[id]?.optatives
 
   const closeModal = () => {
     handleModal(null)
   }
 
-  //The modal will be closed if background is clicked
-  //stopPropagation prevent that a click inside the modal affect the event at ModalBackground
-  return(
+  // The modal will be closed if background is clicked
+  // stopPropagation prevent that a click inside the modal affect the event at ModalBackground
+  return (
     <ModalBackground closeModal={closeModal}>
       <div className='matterModal-exit' onClick={closeModal}>
-        <div className='matterModal-exit-x'></div>
+        <div className='matterModal-exit-x' />
       </div>
       <div className='matterModal' onClick={e => e.stopPropagation()}>
         <div className='matterModal-firstSection-container'>
@@ -49,48 +49,52 @@ const MatterModal = ({id, handleModal}) => {
           </div>
         </div>
         <div className='matterModal-lists-container'>
-          {prerequisites ?
-            <ListDiv title="Prerrequisitos" list={prerequisites}/>
-          : null}
-          {nextMatters ?
-            <ListDiv title="Es requisito para ver" list={nextMatters}/>
-          : null}
-          {optatives ?
-            <ListDiv title="Optativas" list={optatives} />
-          : <MandatoryNotice />}
+          {prerequisites
+            ? <ListDiv title='Prerrequisitos' list={prerequisites} />
+            : null}
+          {nextMatters
+            ? <ListDiv title='Es requisito para ver' list={nextMatters} />
+            : null}
+          {optatives
+            ? <ListDiv title='Optativas' list={optatives} />
+            : <MandatoryNotice />}
         </div>
       </div>
     </ModalBackground>
-  );
+  )
 }
-const ListDiv = ({title, list}) => {
+const ListDiv = ({ title, list }) => {
   return (
     <div className='matterModal-list-div'>
-    <span className='matterModal-list-title'>{title}</span>
-    <ul className='matterModal-list'>
-      {list.map((listItem, index) => {
-        return listItem instanceof Array
-        ? <li key={index}>
-            {listItem.map((matterId, i) => {
-              return (
-                <span key={matterId}>
-                  {i === 0 ? null : <span className='matterModal-ist-separatorLetter'>O</span>}
-                  <span>{MATTERS[matterId].name}</span>
-                </span>
-              ) ;
-            })}
-          </li>
-        : <li key={listItem}>{MATTERS[listItem].name}</li>
-      })}
-    </ul>
-  </div>
-  );
+      <span className='matterModal-list-title'>{title}</span>
+      <ul className='matterModal-list'>
+        {list.map((listItem, index) => {
+          return (listItem instanceof Array
+            ? (
+              <li key={index}>{
+                listItem.map((matterId, i) => {
+                  return (
+                    <span key={matterId}>
+                      {i === 0 ? null : <span className='matterModal-ist-separatorLetter'>O</span>}
+                      <span>{MATTERS[matterId].name}</span>
+                    </span>
+                  )
+                })
+              }
+              </li>
+              )
+            : <li key={listItem}>{MATTERS[listItem].name}</li>
+          )
+        })}
+      </ul>
+    </div>
+  )
 }
 const MandatoryNotice = () => {
   return (
     <div className='matterModal-list-div'>
       <span className='matterModal-list-title'>Obligatoria (No tiene optativas)</span>
     </div>
-  ) ;
+  )
 }
-export default MatterModal;
+export default MatterModal

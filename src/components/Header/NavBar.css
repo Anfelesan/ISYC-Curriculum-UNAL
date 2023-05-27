@@ -1,7 +1,7 @@
-.header-nav{
+.header-nav {
   padding: 8px;
 }
-.header-nav-ul{
+.header-nav-ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -10,24 +10,24 @@
   padding: 0;
   list-style: none;
 }
-.header-nav-li{
+.header-nav-li {
   flex-grow: 1;
   background-color: #fff;
   text-align: center;
   cursor: pointer;
 }
-.header-nav-li:hover > .header-nav-link{
+.header-nav-li:hover > .header-nav-link {
   color: #09f;
 }
-.header-nav-link{
+.header-nav-link {
   box-sizing: border-box;
   display: inline-block;
   padding: 4.5px 4px;
   width: 100%;
-  transition: color .15s;
+  transition: color 0.15s;
   text-decoration: none;
 }
 
-.header-nav-link-main{
-  border: solid 2px #ccc
+.header-nav-link-main {
+  border: solid 2px #ccc;
 }

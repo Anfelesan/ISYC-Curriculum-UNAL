@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import MatterModal from '../components/MatterModal/MatterModal';
-import CurriculumContent from '../components/CurriculumContent/CurriculumContent';
-import { dataIngContent } from '../data/curriculumsContent';
+import { useState } from 'react'
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+import MatterModal from '../components/MatterModal/MatterModal'
+import CurriculumContent from '../components/CurriculumContent/CurriculumContent'
+import { dataIngContent } from '../data/curriculumsContent'
 
 const DataSciences = () => {
-  const [matterIdModal, setMatterIdModal] = useState(null);
-  const handleModal = (id) => setMatterIdModal(id);
+  const [matterIdModal, setMatterIdModal] = useState(null)
+  const handleModal = (id) => setMatterIdModal(id)
 
   return (
     <>
@@ -20,4 +20,4 @@ const DataSciences = () => {
     </>
   )
 }
-export default DataSciences;
+export default DataSciences

@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import MatterModal from '../components/MatterModal/MatterModal';
-import CurriculumContent from '../components/CurriculumContent/CurriculumContent';
-import { mainCurriculumContent } from '../data/curriculumsContent';
+import { useState } from 'react'
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+import MatterModal from '../components/MatterModal/MatterModal'
+import CurriculumContent from '../components/CurriculumContent/CurriculumContent'
+import { mainCurriculumContent } from '../data/curriculumsContent'
 
-const MainCurriculum = () =>{
-  const [matterIdModal, setMatterIdModal] = useState(null);
-  const handleModal = (id) => setMatterIdModal(id);
+const MainCurriculum = () => {
+  const [matterIdModal, setMatterIdModal] = useState(null)
+  const handleModal = (id) => setMatterIdModal(id)
 
   return (
     <>
@@ -18,6 +18,6 @@ const MainCurriculum = () =>{
       </main>
       <Footer />
     </>
-  );
+  )
 }
-export default MainCurriculum;
+export default MainCurriculum
