@@ -1,17 +1,45 @@
+.matterCard-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.matterCard-prerequisites-container,
+.matterCard-nextMatters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 19.5px 0 7px 0;
+  color: #fff;
+}
+.matterCard-prerequisite-square,
+.matterCard-nextMatter-square {
+  display: grid;
+  place-content: center;
+  border: solid 3px #000;
+  background-color: #f21;
+  font-size: 0.7em;
+}
+.matterCard-prerequisite-square {
+  padding: 1px 2px 1px 3px;
+  border-right: 0;
+  border-radius: 8px 0 0 8px;
+  background-color: #0af;
+}
+.matterCard-nextMatter-square {
+  padding: 1px 3px 1px 2px;
+  border-left: 0;
+  border-radius: 0 8px 8px 0;
+}
+
 .matterCard {
-  width: 96%;
-  max-width: 170px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 220px;
   overflow: hidden;
   border: solid 3px #000;
   border-radius: 8px;
   background-color: #fff;
-  transform: scale(0.9);
-}
-
-@media (max-width: 1280px) {
-  .matterCard {
-    max-width: 220px;
-  }
 }
 
 .matterCard-firstData-container {
@@ -22,6 +50,8 @@
   flex-grow: 1;
   text-align: center;
   font-weight: 800;
+  font-size: 0.8em;
+  font-weight: 600;
 }
 .matterCard-credits {
   background-color: #000;
@@ -36,25 +66,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 25px;
+  min-height: 20px;
   margin: 0;
   padding: 2px 2px;
   border-bottom: solid 3px #000;
-  font-size: 1.02em;
   text-align: center;
 }
 .matterCard-name {
-  font-weight: 500;
+  flex-grow: 5;
+  font-weight: 600;
+  font-size: 0.67em;
 }
 .matterCard-group {
-  font-weight: 400;
+  flex-grow: 3;
+  font-size: 0.67em;
 }
 
 .matterCard-idComponent-container {
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
-  border-bottom: solid 3px #000;
-  min-height: 20px;
+  min-height: 15px;
 }
 .matterCard-id {
   flex-grow: 2;
@@ -65,19 +97,52 @@
   flex-grow: 1;
   text-align: center;
   font-weight: 600;
-  font-size: 1.04em;
+}
+.matterCard-component,
+.matterCard-id {
+  display: grid;
+  place-content: center;
+  font-size: 0.8em;
 }
 
 .matterCard-seeMore {
+  flex-grow: 1;
   border: none;
   background-color: #0099ff;
   width: 100%;
-  padding: 1.5px 1px;
-  font-size: 1.1rem;
+  padding: 1px 1px;
+  border-top: solid 3px #000;
+  font-size: 0.8rem;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.15s;
 }
 .matterCard-seeMore:hover {
   background-color: #0af;
+}
+
+@media screen and (min-width: 1610px) {
+  .matterCard-name {
+    font-size: 0.72em;
+  }
+  .matterCard-group {
+    font-size: 0.69em;
+  }
+  .matterCard-prerequisite-square,
+  .matterCard-nextMatter-square {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 1365px) {
+  .matterCard-name {
+    font-size: 0.9em;
+  }
+  .matterCard-group {
+    font-size: 0.85em;
+  }
+  .matterCard-prerequisite-square,
+  .matterCard-nextMatter-square {
+    font-size: .95em;
+  }
 }
