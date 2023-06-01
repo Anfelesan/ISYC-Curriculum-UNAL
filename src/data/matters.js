@@ -589,7 +589,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     prerequisites: [[2015734, 2026573]],
     nextMatters: [2016699, 2016353, 2027641, 2025970, 2025970, 2027641]
   },
@@ -602,7 +601,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     prerequisites: [2016375],
     nextMatters: [2016696, 2016701, 2025966, 2027642, 2027628, 2025967]
   },
@@ -615,7 +613,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     prerequisites: [[2016353, 2027641], 2016703, 2016699],
     nextMatters: [2016702]
   },
@@ -628,7 +625,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     prerequisites: [2016701, 2025967],
     nextMatters: [2016716, 2025983]
   },
@@ -641,7 +637,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     prerequisites: [2016702]
   },
 
@@ -653,7 +648,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     nextMatters: [2016375],
     optatives: [2026573]
   },
@@ -666,7 +660,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     nextMatters: [2016375],
     optatives: [2015734]
   },
@@ -679,7 +672,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     prerequisites: [2016699, 2015174],
     optatives: [2027642, 2027628]
   },
@@ -692,7 +684,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     prerequisites: [2016699, 2015174],
     optatives: [2025966, 2027628]
   },
@@ -705,7 +696,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.softwareMethods,
-
     prerequisites: [2016699, 2015174],
     optatives: [2027642, 2025966]
   },
@@ -718,7 +708,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [[2016698, 2016498]],
     nextMatters: [2016707, 2025967]
   },
@@ -731,7 +720,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016697]
   },
 
@@ -743,7 +731,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [1000017, 2016699, 2016697],
     nextMatters: [2016702, 2025994]
   },
@@ -756,7 +743,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016696]
   },
 
@@ -768,7 +754,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016702, 2025982]
   },
 
@@ -780,7 +765,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2025975],
     nextMatters: [2016697],
     optatives: [2016498]
@@ -794,7 +778,6 @@ const MATTERS = {
     asynchronous: 7,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016495],
     optatives: [2016698]
 
@@ -808,7 +791,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016375],
     nextMatters: [2016701, 2025982, 2016053],
     optatives: [2027641]
@@ -822,7 +804,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016375],
     nextMatters: [2016701, 2025982, 2016053],
     optatives: [2016353]
@@ -836,7 +817,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [[1000013, 2015178], 2025967],
     optatives: [2016492]
   },
@@ -849,7 +829,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016503],
     optatives: [2025994]
   },
@@ -862,7 +841,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [[2016353, 2027641], [2015702, 2016028], 2016703],
     nextMatters: [2025983],
     optatives: [2016053]
@@ -876,7 +854,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [[2016353, 2027641], [2015702, 2016028], 2016703],
     optatives: [2025982]
   },
@@ -889,7 +866,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2027311, 2027313, 2027310, 2027309]
   },
@@ -902,7 +878,6 @@ const MATTERS = {
     asynchronous: 4,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2025972, 2027313, 2027310, 2027309]
   },
@@ -911,12 +886,10 @@ const MATTERS = {
     id: 2027313,
     name: 'Teoría de la codificación',
     credits: 4,
-
     synchronous: 4,
     asynchronous: 4,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2025972, 2027311, 2027310, 2027309]
   },
@@ -929,7 +902,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2025972, 2027311, 2027313, 2027309]
   },
@@ -942,7 +914,6 @@ const MATTERS = {
     asynchronous: 4,
     component: mc.discipline,
     group: mg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2025972, 2027311, 2027313, 2027310]
   },
@@ -955,7 +926,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.visualComputing,
-
     prerequisites: [2016696],
     optatives: [2027629, 2019267]
   },
@@ -968,7 +938,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.visualComputing,
-
     prerequisites: [2016696],
     optatives: [2019267, 2025960]
   },
@@ -981,7 +950,6 @@ const MATTERS = {
     asynchronous: 4,
     component: mc.discipline,
     group: mg.visualComputing,
-
     prerequisites: [2016696],
     optatives: [2025960, 2027629]
   },
@@ -994,7 +962,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.smartSystems,
-
     prerequisites: [2016696],
     optatives: [2023251, 2027631, , 2028837, 2017290]
   },
@@ -1007,7 +974,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.smartSystems,
-
     prerequisites: [2016696],
     optatives: [2025995, 2027631, 2028837, 2017290]
   },
@@ -1020,7 +986,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.smartSystems,
-
     prerequisites: [2016696],
     optatives: [2025995, 2023251, 2028837, 2017290]
   },
@@ -1033,7 +998,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.discipline,
     group: mg.smartSystems,
-
     prerequisites: [2016696],
     optatives: [2025995, 2023251, 2027631, 2017290]
   },
@@ -1046,7 +1010,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.smartSystems,
-
     prerequisites: [2016696],
     optatives: [2025995, 2023251, 2027631, 2028837]
   },
@@ -1059,7 +1022,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.modelSystems,
-
     nextMatters: [2016701, 2025982, 2016053]
   },
 
@@ -1071,7 +1033,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.modelSystems,
-
     prerequisites: [[2025971, 2015173]]
   },
 
@@ -1083,7 +1044,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.modelSystems,
-
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375],
     nextMatters: [2025971, 2015173, 2025987],
     optatives: [2019082]
@@ -1097,7 +1057,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.discipline,
     group: mg.modelSystems,
-
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375],
     nextMatters: [2025971, 2015173, 2025987],
     optatives: [2025970]
@@ -1111,7 +1070,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.modelSystems,
-
     prerequisites: [[2025970, 2019082]],
     nextMatters: [2025969, 2025987],
     optatives: [2015173]
@@ -1125,7 +1083,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.discipline,
     group: mg.modelSystems,
-
     prerequisites: [[2025970, 2019082]],
     nextMatters: [2025969, 2025987],
     optatives: [2025971]
@@ -1139,7 +1096,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.professionalContext,
-
     nextMatters: [2016698]
   },
 
@@ -1151,7 +1107,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2016600, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037]
   },
@@ -1164,7 +1119,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016600, 2016599, 2016741, 2016037]
   },
@@ -1177,7 +1131,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2016600, 2016007, 2016615, 2016599, 2016741, 2016037]
   },
@@ -1190,7 +1143,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.discipline,
     group: mg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016600, 2016615, 2016599, 2016741, 2016037]
   },
@@ -1203,7 +1155,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037]
   },
@@ -1216,7 +1167,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016600, 2016741, 2016037]
   },
@@ -1229,7 +1179,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.discipline,
     group: mg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016600, 2016037]
   },
@@ -1240,13 +1189,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.probability,
-    prerequisites: [[1000005, 2015556]],
-    optatives: [1000013, 2015178],
     component: mc.discipline,
     group: mg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016600]
   },
@@ -1259,7 +1203,6 @@ const MATTERS = {
     asynchronous: 16,
     component: mc.discipline,
     group: mg.degreeWork,
-
     specialPrerequisites: 'Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional',
     optatives: [2025973, 2016843]
   },
@@ -1272,7 +1215,6 @@ const MATTERS = {
     asynchronous: 16,
     component: mc.discipline,
     group: mg.degreeWork,
-
     specialPrerequisites: 'Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional',
     optatives: [2016843, 2025974]
   },
@@ -1358,7 +1300,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
+    group: mg.computerScience,
     nextMatters: [2015181, 2025819]
   },
   2015181: {
@@ -1368,7 +1310,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
+    group: mg.computerScience,
     prerequisites: [2015168],
     nextMatters: [2015155]
   },
@@ -1401,7 +1343,8 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.computerScience,
-    prerequisites: [2015168]
+    prerequisites: [2015168],
+    nextMatters:[2015184],
   },
   2026519: {
     id: 2026519,
@@ -1410,7 +1353,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
+    group: mg.computerScience,
     prerequisites: [1000003, 2015555, 2015181]
   },
   2016366: {
@@ -1474,7 +1417,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 2,
     component: mc.free,
-    group: mg.free,
+    group: mg.computerInfrastructure,
     prerequisites: [2025975],
     nextMatters: [2016489]
   },
@@ -1496,8 +1439,8 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [1000006, 2015162, 1000017, 2016506],
+    group: mg.computerInfrastructure,
+    prerequisites: [[1000006, 2015162], 1000017, 2016506],
     nextMatters: [2016503]
   },
   2016506: {
@@ -1507,9 +1450,9 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 5,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [2016489, 2016342],
-    nextMatters: [2016506]
+    group: mg.computerInfrastructure,
+    prerequisites: [2016489, [2016342, 1000007]],
+    nextMatters: [2016507]
   },
 
   2015159: {
@@ -1519,8 +1462,8 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [2016342],
+    group: mg.math,
+    prerequisites: [[2016342,1000007]],
     nextMatters: [2016507]
   },
   2016507: {
@@ -1530,7 +1473,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 5,
     component: mc.free,
-    group: mg.free,
+    group: mg.computerInfrastructure,
     prerequisites: [2015159, 2016506],
     nextMatters: [2017287, 2016493]
   },
@@ -1541,19 +1484,19 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 5,
     component: mc.free,
-    group: mg.free,
+    group: mg.softwareMethods,
     prerequisites: [],
     nextMatters: []
   },
 
-  2026732: {
-    id: 2026732,
+  2016732: {
+    id: 2016732,
     name: 'Desarrollo de Aplicaciones Móviles',
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.free,
-    group: mg.free,
+    group: mg.softwareMethods,
     prerequisites: [],
     nextMatters: []
   },
@@ -1564,7 +1507,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
+    group: mg.softwareMethods,
     prerequisites: [],
     nextMatters: []
   },
@@ -1575,7 +1518,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
+    group: mg.softwareMethods,
     prerequisites: [],
     nextMatters: []
   },
@@ -1586,7 +1529,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
+    group: mg.softwareMethods,
     prerequisites: [],
     nextMatters: []
   },
@@ -1597,7 +1540,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
+    group: mg.softwareMethods,
     prerequisites: [],
     nextMatters: []
   },
@@ -1786,8 +1729,8 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
+    group: mg.computerScience,
+    prerequisites: [2026548],
     nextMatters: [2015174, 2016696, 2025964]
   },
   2015155: {
@@ -1798,7 +1741,7 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.free,
-    prerequisites: [1000006, 2015162, 2025819, 2015181],
+    prerequisites: [[1000006, 2015162], 2015181],
     nextMatters: [2019072]
   },
   2015150: {
