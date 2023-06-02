@@ -1354,7 +1354,7 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.computerScience,
-    prerequisites: [1000003, 2015555, 2015181]
+    prerequisites: [[1000003, 2015555], 2015181]
   },
   2016366: {
     id: 2016366,
@@ -1363,7 +1363,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free
+    group: mg.probability
   },
   2016379: {
     id: 2016379,
@@ -1372,7 +1372,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
+    group: mg.probability,
     prerequisites: [1000013, 2015178],
     nextMatters: [2016360]
   },
@@ -1384,8 +1384,8 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [1000005, 2015556, 1000003, 2015555],
+    group: mg.math,
+    prerequisites: [[1000005, 2015556], [1000003, 2015555]],
     nextMatters: [2016506, 2015159]
   },
   2016495: {
@@ -1395,7 +1395,7 @@ const MATTERS = {
     synchronous: 6,
     asynchronous: 6,
     component: mc.free,
-    group: mg.free,
+    group: mg.computerInfrastructure,
     prerequisites: [2016489],
     nextMatters: [2016498]
   },
@@ -1406,8 +1406,8 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 5,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [2016509, 1000004, 2016377],
+    group: mg.computerInfrastructure,
+    prerequisites: [2016509, [1000004, 2016377]],
     nextMatters: [2016495]
   },
   2016509: {
@@ -1428,7 +1428,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 5,
     component: mc.free,
-    group: mg.free,
+    group: mg.computerInfrastructure,
     prerequisites: [2016487],
     nextMatters: [2016492]
   },
@@ -1485,8 +1485,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.free,
     group: mg.softwareMethods,
-    prerequisites: [],
-    nextMatters: []
   },
 
   2016732: {
@@ -1497,8 +1495,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.free,
     group: mg.softwareMethods,
-    prerequisites: [],
-    nextMatters: []
   },
   2019772: {
     id: 2019772,
@@ -1508,8 +1504,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.softwareMethods,
-    prerequisites: [],
-    nextMatters: []
   },
   2019765: {
     id: 2019765,
@@ -1519,8 +1513,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.softwareMethods,
-    prerequisites: [],
-    nextMatters: []
   },
   2019773: {
     id: 2019773,
@@ -1530,8 +1522,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.softwareMethods,
-    prerequisites: [],
-    nextMatters: []
   },
   2019795: {
     id: 2019795,
@@ -1541,8 +1531,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.softwareMethods,
-    prerequisites: [],
-    nextMatters: []
   },
   2019762: {
     id: 2019762,
@@ -1552,8 +1540,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.computerScience,
-    prerequisites: [],
-    nextMatters: []
   },
 
   2026484: {
@@ -1564,8 +1550,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.visualComputing,
-    prerequisites: [],
-    nextMatters: []
   },
   2019818: {
     id: 2019818,
@@ -1575,8 +1559,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.visualComputing,
-    prerequisites: [],
-    nextMatters: []
   },
 
   2019779: {
@@ -1587,8 +1569,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.visualComputing,
-    prerequisites: [],
-    nextMatters: []
   },
   2026442: {
     id: 2026442,
@@ -1598,8 +1578,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.visualComputing,
-    prerequisites: [],
-    nextMatters: []
   },
   2025439: {
     id: 2025439,
@@ -1609,8 +1587,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.visualComputing,
-    prerequisites: [],
-    nextMatters: []
   },
   2019799: {
     id: 2019799,
@@ -1620,8 +1596,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.visualComputing,
-    prerequisites: [],
-    nextMatters: []
   },
   2025783: {
     id: 2025783,
@@ -1630,9 +1604,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
-    nextMatters: []
+    group: mg.computerInfrastructure,
   },
   2026231: {
     id: 2026231,
@@ -1642,8 +1614,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.free,
     group: mg.computerInfrastructure,
-    prerequisites: [],
-    nextMatters: []
   },
   2026537: {
     id: 2026537,
@@ -1653,8 +1623,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.free,
     group: mg.computerInfrastructure,
-    prerequisites: [],
-    nextMatters: []
   },
   2026538: {
     id: 2026538,
@@ -1664,8 +1632,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.free,
     group: mg.computerInfrastructure,
-    prerequisites: [],
-    nextMatters: []
   },
   2026440: {
     id: 2026440,
@@ -1675,8 +1641,6 @@ const MATTERS = {
     asynchronous: 9,
     component: mc.free,
     group: mg.computerInfrastructure,
-    prerequisites: [],
-    nextMatters: []
   },
   2026502: {
     id: 2026502,
@@ -1686,8 +1650,6 @@ const MATTERS = {
     asynchronous: 9,
     component: mc.free,
     group: mg.computerInfrastructure,
-    prerequisites: [],
-    nextMatters: []
   },
   2016605: {
     id: 2016605,
@@ -1697,8 +1659,6 @@ const MATTERS = {
     asynchronous: 5,
     component: mc.free,
     group: mg.modelSystems,
-    prerequisites: [],
-    nextMatters: []
   },
   2015177: {
     id: 2015177,
@@ -1707,9 +1667,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
-    nextMatters: []
+    group: mg.modelSystems,
   },
   2026555: {
     id: 2026555,
@@ -1719,8 +1677,6 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.modelSystems,
-    prerequisites: [],
-    nextMatters: []
   },
   2015184: {
     id: 2015184,
@@ -1740,20 +1696,19 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
+    group: mg.computerScience,
     prerequisites: [[1000006, 2015162], 2015181],
     nextMatters: [2019072]
   },
   2015150: {
     id: 2015150,
-    name: 'Análisis numérico',
+    name: 'Análisis numérico ',
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
-    nextMatters: []
+    group: mg.computerScience,
+    prerequisites: [2015155, 2026555,[2015162,1000006]],
   },
   2015156: {
     id: 2015156,
@@ -1762,9 +1717,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
-    nextMatters: []
+    group: mg.computerScience,
   },
   2016505: {
     id: 2016505,
@@ -1773,9 +1726,8 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 5,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
-    nextMatters: []
+    group: mg.computerInfrastructure,
+    prerequisites: [2016499],
   },
   1000007: {
     id: 1000007,
@@ -1785,8 +1737,8 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.math,
-    prerequisites: [],
-    nextMatters: []
+    prerequisites: [1000005, 1000003],
+    nextMatters: [2016506, 2015159]
   },
   2016702: {
     id: 2016702,
@@ -1796,8 +1748,8 @@ const MATTERS = {
     asynchronous: 8,
     component: mc.free,
     group: mg.softwareMethods,
-    prerequisites: [],
-    nextMatters: []
+    prerequisites: [2016701, 2025967],
+    nextMatters: [2016716]
   },
   2023644: {
     id: 2023644,
@@ -1806,9 +1758,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
-    nextMatters: []
+    group: mg.visualComputing,
   },
   2016070: {
     id: 2016070,
@@ -1817,20 +1767,20 @@ const MATTERS = {
     synchronous: 3,
     asynchronous: 3,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [2016749],
+    group: mg.visualComputing,
+    prerequisites: [2025975],
     nextMatters: [2016071]
   },
   2016071: {
     id: 2016071,
-    name: 'Fundamentos tecnológicos: Formatos y medidas',
+    name: 'Fundamentos tecnológicos: tipometría',
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: mc.free,
-    group: mg.free,
+    group: mg.visualComputing,
     prerequisites: [2016070],
-    nextMatters: []
+    nextMatters: [2016069]
   },
   2026511: {
     id: 2026511,
@@ -1839,9 +1789,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
-    nextMatters: []
+    group: mg.visualComputing,
   },
   2027202: {
     id: 2027202,
@@ -1850,9 +1798,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
-    nextMatters: []
+    group: mg.visualComputing,
   },
   2016360: {
     id: 2016360,
@@ -1861,9 +1807,7 @@ const MATTERS = {
     synchronous: 4,
     asynchronous: 8,
     component: mc.free,
-    group: mg.free,
-    prerequisites: [],
-    nextMatters: []
+    group: mg.probability,
   }
 }
 export default MATTERS
