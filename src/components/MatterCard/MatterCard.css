@@ -15,7 +15,6 @@
   display: grid;
   place-content: center;
   border: solid 3px #000;
-  background-color: #f21;
   font-size: 0.7em;
   color: #fff;
 }
