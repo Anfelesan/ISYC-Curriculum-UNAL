@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer'
 import SubjectModal from '../components/SubjectModal/SubjectModal'
 import CurriculumContent from '../components/CurriculumContent/CurriculumContent'
 import { mainCurriculumContent } from '../data/curriculumsContent'
+import '../styles/page.css'
 
 const MainCurriculum = () => {
   const [subjectIdModal, setSubjectIdModal] = useState(null)
@@ -13,6 +14,7 @@ const MainCurriculum = () => {
     <>
       <Header />
       <main>
+        <h1 className='curriculum-main-title'>Malla principal</h1>
         <CurriculumContent content={mainCurriculumContent} handleModal={handleModal} />
         {subjectIdModal ? <SubjectModal id={subjectIdModal} handleModal={handleModal} /> : null}
       </main>

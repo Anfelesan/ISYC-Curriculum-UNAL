@@ -1,0 +1,5 @@
+.curriculum-main-title{
+  padding: 0 13px;
+  font-size: clamp(10px, 10vw, 1.8em);
+  text-align: center;
+}

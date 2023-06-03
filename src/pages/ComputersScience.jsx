@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer'
 import SubjectModal from '../components/SubjectModal/SubjectModal'
 import CurriculumContent from '../components/CurriculumContent/CurriculumContent'
 import { computerCienceContent } from '../data/curriculumsContent'
+import '../styles/page.css'
 
 const ComputersScience = () => {
   const [subjectIdModal, setSubjectIdModal] = useState(null)
@@ -13,6 +14,7 @@ const ComputersScience = () => {
     <>
       <Header />
       <main>
+        <h1 className='curriculum-main-title'>Malla opción de ruta curricular en Ciencias de la Computación</h1>
         <CurriculumContent content={computerCienceContent} handleModal={handleModal} />
         {subjectIdModal ? <SubjectModal id={subjectIdModal} handleModal={handleModal} /> : null}
       </main>

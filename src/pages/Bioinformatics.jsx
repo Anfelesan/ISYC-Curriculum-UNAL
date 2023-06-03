@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer'
 import SubjectModal from '../components/SubjectModal/SubjectModal'
 import CurriculumContent from '../components/CurriculumContent/CurriculumContent'
 import { bioComputingContent } from '../data/curriculumsContent'
+import '../styles/page.css'
 
 const Bioinformatics = () => {
   const [subjectIdModal, setSubjectIdModal] = useState(null)
@@ -13,6 +14,7 @@ const Bioinformatics = () => {
     <>
       <Header />
       <main>
+        <h1 className='curriculum-main-title'>Malla opción de ruta curricular en Bioinformática y Computación Bioinspirada</h1>
         <CurriculumContent content={bioComputingContent} handleModal={handleModal} />
         {subjectIdModal ? <SubjectModal id={subjectIdModal} handleModal={handleModal} /> : null}
       </main>
