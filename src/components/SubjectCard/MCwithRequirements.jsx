@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import requirementsRelations from '../../logic/requirementsRelations'
-import MatterCard from './MatterCard'
-import './MatterCard.css'
+import SubjectCard from './SubjectCard'
+import './SubjectCard.css'
 
 // Theese two props are optional:
 // preRelations expects to be a dictionary {number: "color", ...}
@@ -11,18 +11,18 @@ const MCwithRequirements = ({ id, credits, synchronous, asynchronous, name, grou
   const [nextRelation, setNextRelation] = useState(null)
 
   useEffect(() => {
-    const { preRelations, nextRelation } = requirementsRelations({ idMatter: id, content })
+    const { preRelations, nextRelation } = requirementsRelations({ idSubject: id, content })
     setNextRelation(nextRelation)
     setPreRelations(preRelations)
   }, [])
 
   return (
-    <div className='matterCard-container'>
-      <div className='matterCard-prerequisites-container'>
-        <div className='matterCard-prerequisite-square'>11</div>
-        <div className='matterCard-prerequisite-square'>12</div>
+    <div className='subjectCard-container'>
+      <div className='subjectCard-prerequisites-container'>
+        <div className='subjectCard-prerequisite-square'>11</div>
+        <div className='subjectCard-prerequisite-square'>12</div>
       </div>
-      <MatterCard
+      <SubjectCard
         id={id}
         credits={credits}
         synchronous={synchronous}
@@ -33,7 +33,7 @@ const MCwithRequirements = ({ id, credits, synchronous, asynchronous, name, grou
         handleModal={handleModal}
       />
       {nextRelation &&
-        <div className='matterCard-nextMatter-square' style={{ backgroundColor: nextRelation.color }}>{nextRelation.number}</div>}
+        <div className='subjectCard-nextSubject-square' style={{ backgroundColor: nextRelation.color }}>{nextRelation.number}</div>}
     </div>
   )
 }
