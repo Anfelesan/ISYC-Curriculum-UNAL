@@ -1,17 +1,17 @@
 :root {
-  --matterModal-background: #fff;
+  --subjectModal-background: #fff;
 }
 .dark {
-  --matterModal-background: #000;
+  --subjectModal-background: #000;
 }
 
-.matterModal {
+.subjectModal {
   position: relative;
   width: 90%;
   max-width: 800px;
   max-height: calc(100vh - 70px);
   top: -20px;
-  background-color: var(--matterModal-background);
+  background-color: var(--subjectModal-background);
   border-radius: 20px;
   overflow-y: scroll;
   z-index: 1000;
@@ -26,7 +26,7 @@
   }
 }
 
-.matterModal-firstSection-container {
+.subjectModal-firstSection-container {
   display: flex;
   gap: 5px;
   justify-content: space-between;
@@ -35,17 +35,17 @@
   font-size: clamp(0.5em, 5.5vw, 1.3em);
 }
 
-.matterModal-idText,
-.matterModal-creditsText {
+.subjectModal-idText,
+.subjectModal-creditsText {
   font-weight: 400;
   margin-right: 5px;
 }
-.matterModal-id,
-.matterModal-credits {
+.subjectModal-id,
+.subjectModal-credits {
   color: #939393;
 }
 
-.matterModal-exit {
+.subjectModal-exit {
   display: grid;
   place-content: center;
   position: absolute;
@@ -59,32 +59,32 @@
   cursor: pointer;
   z-index: 10000;
 }
-.matterModal-exit-x,
-.matterModal-exit-x::after {
+.subjectModal-exit-x,
+.subjectModal-exit-x::after {
   position: relative;
   width: 30px;
   height: 3px;
   border-radius: 10px;
   background-color: #ce9797;
 }
-.matterModal-exit-x {
+.subjectModal-exit-x {
   transform: rotate(45deg);
   transition: transform 0.25s;
 }
-.matterModal-exit-x::after {
+.subjectModal-exit-x::after {
   content: "";
   position: absolute;
   transform: rotate(90deg);
   transition: transform 0.25s;
 }
-.matterModal-exit:hover > .matterModal-exit-x {
+.subjectModal-exit:hover > .subjectModal-exit-x {
   transform: rotate(135deg);
 }
-.matterModal-exit:hover > .matterModal-exit-x::after {
+.subjectModal-exit:hover > .subjectModal-exit-x::after {
   transform: rotate(-90deg);
 }
 
-.matterModal-name {
+.subjectModal-name {
   text-align: center;
   margin: 0 0 15px 0;
   padding: 5px;
@@ -93,14 +93,14 @@
   font-family: arial;
 }
 
-.matterModal-secondSection-container {
+.subjectModal-secondSection-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 10px;
   padding: 4px 10px;
 }
-.matterModal-weeklyHours {
+.subjectModal-weeklyHours {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -112,22 +112,22 @@
   font-size: 1.1em;
   text-align: center;
 }
-.matterModal-weeklyHours-title {
+.subjectModal-weeklyHours-title {
   font-weight: 600;
   letter-spacing: 1px;
 }
-.matterModal-synchronousText,
-.matterModal-asynchronousText {
+.subjectModal-synchronousText,
+.subjectModal-asynchronousText {
   font-weight: 00;
   margin-right: 7px;
   letter-spacing: 1px;
 }
-.matterModal-synchronous,
-.matterModal-asynchronous {
+.subjectModal-synchronous,
+.subjectModal-asynchronous {
   color: #939393;
 }
 
-.matterModal-componentGroup-container {
+.subjectModal-componentGroup-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,8 +135,8 @@
   flex-grow: 9;
   font-size: 1.1em;
 }
-.matterModal-component,
-.matterModal-group {
+.subjectModal-component,
+.subjectModal-group {
   box-sizing: border-box;
   width: 100%;
   max-width: 372px;
@@ -147,24 +147,24 @@
   color: #fff;
 }
 
-.matterModal-lists-container {
+.subjectModal-lists-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
   padding: 10px;
 }
-.matterModal-list-div {
+.subjectModal-list-div {
   flex-grow: 1;
   padding: 10px 0;
   background-color: #101728;
   color: #fff;
   border-radius: 20px;
 }
-.matterModal-list-div:nth-child(3) {
+.subjectModal-list-div:nth-child(3) {
   width: 100%;
 }
-.matterModal-list-title {
+.subjectModal-list-title {
   display: block;
   padding: 0 7px;
   font-size: 1.1em;
@@ -172,7 +172,7 @@
   letter-spacing: 1px;
   text-align: center;
 }
-.matterModal-list {
+.subjectModal-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -182,12 +182,12 @@
   border-top: solid 3px #737373;
   text-align: center;
 }
-.matterModal-list li {
+.subjectModal-list li {
   padding: 5px 7px;
   border-radius: 20px;
   background-color: #32394a;
 }
-.matterModal-ist-separatorLetter {
+.subjectModal-ist-separatorLetter {
   margin: 0 7px;
   font-weight: 600;
   color: #fff;

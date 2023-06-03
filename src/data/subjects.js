@@ -1,14 +1,14 @@
 import CURRICULUM_DATA from './curriculumData'
 
-// mc = matter component
-const mc = {
+// sc = subject component
+const sc = {
   basis: CURRICULUM_DATA.components.basis, // Componente de básico o de fundamentación
   discipline: CURRICULUM_DATA.components.discipline, // Componente disciplinar o profesional
   free: CURRICULUM_DATA.components.free, // Componente de libre elección
   leveling: CURRICULUM_DATA.components.leveling
 }
-// mg = matter group
-const mg = {
+// sg = subject group
+const sg = {
   // Basis
   math: CURRICULUM_DATA.groups.basis.math, // Matemáticas
   probability: CURRICULUM_DATA.groups.basis.probability, // Probabilidad y estadística
@@ -27,17 +27,17 @@ const mg = {
   free: CURRICULUM_DATA.groups.free.free // Libre elección
 }
 
-// Matters data
-const MATTERS = {
+// Subjects data
+const SUBJECTS = {
   1000001: {
     id: 1000001,
     name: 'Matemáticas Básicas',
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.leveling,
-    group: mg.math,
-    nextMatters: [1000004, 2016377]
+    component: sc.leveling,
+    group: sg.math,
+    nextSubjects: [1000004, 2016377]
   },
   1000004: {
     id: 1000004,
@@ -45,12 +45,12 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
 
-    // This depends of the matter
+    // This depends of the subject
     prerequisites: [1000001], // [1000001, 1000002] o [1000001, 1000002, 1000003...]
-    nextMatters: [1000005, 2015556, 1000003, 2015555, 1000019],
+    nextSubjects: [1000005, 2015556, 1000003, 2015555, 1000019],
     optatives: [2016377]
   },
   2016377: {
@@ -59,10 +59,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
     prerequisites: [1000001],
-    nextMatters: [1000005, 2015556, 1000003, 2015555, 1000019],
+    nextSubjects: [1000005, 2015556, 1000003, 2015555, 1000019],
     optatives: [1000004]
   },
   1000005: {
@@ -71,10 +71,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
     prerequisites: [[1000004, 2016377]], // [[1000004,2016377]], cuando es opcional
-    nextMatters: [1000006, 2015162, 1000013, 2027877, 2015178, 2015703, 2025986, 2016047],
+    nextSubjects: [1000006, 2015162, 1000013, 2027877, 2015178, 2015703, 2025986, 2016047],
     optatives: [2015556]
   },
   2015556: {
@@ -83,10 +83,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
     prerequisites: [[1000004, 2016377]],
-    nextMatters: [1000006, 2015162, 1000013, 2027877, 2015178, 2015703, 2025986, 2016047],
+    nextSubjects: [1000006, 2015162, 1000013, 2027877, 2015178, 2015703, 2025986, 2016047],
     optatives: [1000005]
   },
   1000006: {
@@ -95,10 +95,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
     prerequisites: [[1000005, 2015556]],
-    nextMatters: [2015970, 2025970, 2019082, 2015155, 2016487],
+    nextSubjects: [2015970, 2025970, 2019082, 2015155, 2016487],
     optatives: [2015162]
   },
   2015162: {
@@ -107,10 +107,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
     prerequisites: [[1000005, 2015556]],
-    nextMatters: [2015970, 2025970, 2019082, 2015155, 2016487],
+    nextSubjects: [2015970, 2025970, 2019082, 2015155, 2016487],
     optatives: [1000006]
   },
   1000003: {
@@ -119,10 +119,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
     prerequisites: [[1000004, 2016377]],
-    nextMatters: [2025963, 2026519, 2016342, 2017271],
+    nextSubjects: [2025963, 2026519, 2016342, 2017271],
     optatives: [2015555]
   },
   2015555: {
@@ -131,10 +131,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
     prerequisites: [[1000004, 2016377]],
-    nextMatters: [2025963, 2026519, 2016342, 2017271],
+    nextSubjects: [2025963, 2026519, 2016342, 2017271],
     optatives: [1000003]
   },
   1000013: {
@@ -143,10 +143,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.basis,
-    group: mg.probability,
+    component: sc.basis,
+    group: sg.probability,
     prerequisites: [[1000005, 2015556]],
-    nextMatters: [2025986, 2025994, 2025970, 2019082, 2016379],
+    nextSubjects: [2025986, 2025994, 2025970, 2019082, 2016379],
     optatives: [2027877, 2015178]
   },
   2027877: {
@@ -155,10 +155,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.probability,
+    component: sc.basis,
+    group: sg.probability,
     prerequisites: [[1000005, 2015556]],
-    nextMatters: [2025986],
+    nextSubjects: [2025986],
     optatives: [1000013, 2015178]
   },
   2015178: {
@@ -167,10 +167,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.probability,
+    component: sc.basis,
+    group: sg.probability,
     prerequisites: [[1000005, 2015556]],
-    nextMatters: [2025986, 2025994, 2025970, 2019082, 2016379],
+    nextSubjects: [2025986, 2025994, 2025970, 2019082, 2016379],
     optatives: [1000013, 2027877]
   },
   1000019: {
@@ -179,10 +179,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.physics,
+    component: sc.basis,
+    group: sg.physics,
     prerequisites: [[1000004, 2016377]],
-    nextMatters: [1000017]
+    nextSubjects: [1000017]
   },
   1000017: {
     id: 1000017,
@@ -190,10 +190,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.physics,
+    component: sc.basis,
+    group: sg.physics,
     prerequisites: [[1000005, 2015556], 1000019],
-    nextMatters: [2025967, 2016487]
+    nextSubjects: [2025967, 2016487]
   },
   2015174: {
     id: 2015174,
@@ -201,10 +201,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.computerScience,
+    component: sc.basis,
+    group: sg.computerScience,
     prerequisites: [[2015184, 2025963]],
-    nextMatters: [2025966, 2027642, 2027628]
+    nextSubjects: [2025966, 2027642, 2027628]
   },
   2016696: {
     id: 2016696,
@@ -212,10 +212,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 5,
     asynchronous: 4,
-    component: mc.basis,
-    group: mg.computerScience,
+    component: sc.basis,
+    group: sg.computerScience,
     prerequisites: [2016699, [2015184, 2025963], [2025964, 2026519]],
-    nextMatters: [2016722, 2025972, 2027311, 2027313, 2027310, 2027309, 2025960, 2027629, 2019267, 2025995, 2023251, 2027631, 2028837, 2017290]
+    nextSubjects: [2016722, 2025972, 2027311, 2027313, 2027310, 2027309, 2025960, 2027629, 2019267, 2025995, 2023251, 2027631, 2028837, 2017290]
   },
   2025963: {
     id: 2025963,
@@ -223,10 +223,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.computerScience,
+    component: sc.basis,
+    group: sg.computerScience,
     prerequisites: [[1000003, 2015555]],
-    nextMatters: [2025964, 2015174, 2016696],
+    nextSubjects: [2025964, 2015174, 2016696],
     optatives: [2025819]
   },
   2025819: {
@@ -235,10 +235,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.computerScience,
+    component: sc.basis,
+    group: sg.computerScience,
     prerequisites: [1000019],
-    nextMatters: [2015181, 2015155, 2026519],
+    nextSubjects: [2015181, 2015155, 2026519],
     optatives: [2025963]
   },
   2025964: {
@@ -247,10 +247,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.computerScience,
+    component: sc.basis,
+    group: sg.computerScience,
     prerequisites: [2025963, 2015184],
-    nextMatters: [2016696, 2025970, 2019082],
+    nextSubjects: [2016696, 2025970, 2019082],
     optatives: [2015181]
   },
   2015181: {
@@ -259,10 +259,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.computerScience,
+    component: sc.basis,
+    group: sg.computerScience,
     prerequisites: [2025819],
-    nextMatters: [2026548],
+    nextSubjects: [2026548],
     optatives: [2025964]
   },
   2015970: {
@@ -271,8 +271,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.basis,
-    group: mg.computerScience,
+    component: sc.basis,
+    group: sg.computerScience,
     prerequisites: [[1000006, 2015162]],
     optatives: [2019072]
   },
@@ -282,8 +282,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.computerScience,
+    component: sc.basis,
+    group: sg.computerScience,
     prerequisites: [2015155],
     optatives: [2015970]
   },
@@ -293,10 +293,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.basis,
-    group: mg.eco,
+    component: sc.basis,
+    group: sg.eco,
     prerequisites: [[1000005, 2015556]],
-    nextMatters: [2015702, 2016028],
+    nextSubjects: [2015702, 2016028],
     optatives: [2025986, 2016047]
   },
   2025986: {
@@ -305,10 +305,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.basis,
-    group: mg.eco,
+    component: sc.basis,
+    group: sg.eco,
     prerequisites: [[1000005, 2015556], 1000013, [2027877, 2015178], 2016610],
-    nextMatters: [2015702, 2016028],
+    nextSubjects: [2015702, 2016028],
     optatives: [2015703, 2016047]
   },
   2016047: {
@@ -317,10 +317,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.basis,
-    group: mg.eco,
+    component: sc.basis,
+    group: sg.eco,
     prerequisites: [[1000005, 2015556]],
-    nextMatters: [2015702, 2016028],
+    nextSubjects: [2015702, 2016028],
     optatives: [2015703, 2025986]
   },
   2015702: {
@@ -329,10 +329,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.basis,
-    group: mg.eco,
+    component: sc.basis,
+    group: sg.eco,
     prerequisites: [[2015703, 2025986, 2016047]],
-    nextMatters: [2025982, 2016053, 2024045, 2016615, 2026551, 2016007, 2016600, 2016599, 2016741, 2016037],
+    nextSubjects: [2025982, 2016053, 2024045, 2016615, 2026551, 2016007, 2016600, 2016599, 2016741, 2016037],
     optatives: [2016028]
   },
   2016028: {
@@ -341,10 +341,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.eco,
+    component: sc.basis,
+    group: sg.eco,
     prerequisites: [[2015703, 2025986, 2016047]],
-    nextMatters: [2025982, 2016053, 2024045, 2016615, 2026551, 2016007, 2016600, 2016599, 2016741, 2016037],
+    nextSubjects: [2025982, 2016053, 2024045, 2016615, 2026551, 2016007, 2016600, 2016599, 2016741, 2016037],
     optatives: [2015702]
   },
   1000002: {
@@ -353,8 +353,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 7,
-    component: mc.leveling,
-    group: mg.professionalContext
+    component: sc.leveling,
+    group: sg.professionalContext
   },
   1000004: {
     id: 1000004,
@@ -362,13 +362,13 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
 
-    // This depends of the matter
+    // This depends of the subject
     prerequisites: [1000001], // [1000001, 1000002] o [1000001, 1000002, 1000003...]
-    nextMatters: [1000005],
-    nextMatters: [1000005, 2015556, 1000003, 2015555, 1000019],
+    nextSubjects: [1000005],
+    nextSubjects: [1000005, 2015556, 1000003, 2015555, 1000019],
     optatives: [2016377]
   },
   2016377: {
@@ -377,11 +377,11 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.math,
+    component: sc.basis,
+    group: sg.math,
     prerequisites: [1000001],
-    nextMatters: [1000005],
-    nextMatters: [1000005, 2015556, 1000003, 2015555, 1000019],
+    nextSubjects: [1000005],
+    nextSubjects: [1000005, 2015556, 1000003, 2015555, 1000019],
     optatives: [1000004]
   },
   2016499: {
@@ -390,10 +390,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2016498],
-    nextMatters: [2016512, 2016508]
+    nextSubjects: [2016512, 2016508]
   },
   2016508: {
     id: 2016508,
@@ -401,8 +401,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2016499]
   },
   2016512: {
@@ -411,8 +411,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.math,
+    component: sc.free,
+    group: sg.math,
     prerequisites: [2016499]
   },
   2017271: {
@@ -421,10 +421,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [[1000003, 2015555]],
-    nextMatters: [2016770]
+    nextSubjects: [2016770]
   },
   2017287: {
     id: 2017287,
@@ -432,8 +432,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2016507]
   },
   2016493: {
@@ -442,10 +442,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 6,
     asynchronous: 6,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2016507],
-    nextMatters: [2016770]
+    nextSubjects: [2016770]
   },
   2016770: {
     id: 2016770,
@@ -453,8 +453,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2017271, 2016493]
   },
   2016592: {
@@ -463,9 +463,9 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.eco,
-    nextMatters: [2016610]
+    component: sc.free,
+    group: sg.eco,
+    nextSubjects: [2016610]
   },
   2016610: {
     id: 2016610,
@@ -473,10 +473,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 6,
     asynchronous: 6,
-    component: mc.free,
-    group: mg.eco,
+    component: sc.free,
+    group: sg.eco,
     prerequisites: [2016592],
-    nextMatters: [2025986]
+    nextSubjects: [2025986]
   },
   1000009: {
     id: 1000009,
@@ -484,8 +484,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free
+    component: sc.free,
+    group: sg.free
   },
   1000010: {
     id: 1000010,
@@ -493,8 +493,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free
+    component: sc.free,
+    group: sg.free
   },
   2016099: {
     id: 2016099,
@@ -502,9 +502,9 @@ const MATTERS = {
     credits: 5,
     synchronous: 9,
     asynchronous: 6,
-    component: mc.free,
-    group: mg.visualComputing,
-    nextMatters: [2016069]
+    component: sc.free,
+    group: sg.visualComputing,
+    nextSubjects: [2016069]
   },
   2016069: {
     id: 2016069,
@@ -512,10 +512,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [2016099],
-    nextMatters: [2016061]
+    nextSubjects: [2016061]
   },
   2016061: {
     id: 2016061,
@@ -523,10 +523,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 6,
     asynchronous: 3,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [2016069],
-    nextMatters: [2016083]
+    nextSubjects: [2016083]
   },
   2016083: {
     id: 2016083,
@@ -534,10 +534,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 6,
     asynchronous: 3,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [2016061],
-    nextMatters: [2016091, 2016093]
+    nextSubjects: [2016091, 2016093]
   },
   2016091: {
     id: 2016091,
@@ -545,8 +545,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 6,
     asynchronous: 3,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [2016083]
   },
   2016093: {
@@ -555,8 +555,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 6,
     asynchronous: 3,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [2016083]
   },
   2025987: {
@@ -565,10 +565,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.modelSystems,
+    component: sc.free,
+    group: sg.modelSystems,
     prerequisites: [[2025971, 2015173], [2025970, 2019082]],
-    nextMatters: [2025988]
+    nextSubjects: [2025988]
   },
   2025988: {
     id: 2025988,
@@ -576,8 +576,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.modelSystems,
+    component: sc.free,
+    group: sg.modelSystems,
     prerequisites: [2025987]
   },
 
@@ -587,11 +587,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
     prerequisites: [[2015734, 2026573]],
-    nextMatters: [2016699, 2016353, 2027641, 2025970, 2025970, 2027641]
+    nextSubjects: [2016699, 2016353, 2027641, 2025970, 2025970, 2027641]
   },
 
   2016699: {
@@ -600,11 +600,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
     prerequisites: [2016375],
-    nextMatters: [2016696, 2016701, 2025966, 2027642, 2027628, 2025967]
+    nextSubjects: [2016696, 2016701, 2025966, 2027642, 2027628, 2025967]
   },
 
   2016701: {
@@ -613,11 +613,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
     prerequisites: [[2016353, 2027641], 2016703, 2016699],
-    nextMatters: [2016702]
+    nextSubjects: [2016702]
   },
 
   2016702: {
@@ -626,11 +626,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
     prerequisites: [2016701, 2025967],
-    nextMatters: [2016716, 2025983]
+    nextSubjects: [2016716, 2025983]
   },
 
   2016716: {
@@ -639,8 +639,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
     prerequisites: [2016702]
   },
@@ -651,10 +651,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
-    nextMatters: [2016375],
+    nextSubjects: [2016375],
     optatives: [2026573]
   },
 
@@ -664,10 +664,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
-    nextMatters: [2016375],
+    nextSubjects: [2016375],
     optatives: [2015734]
   },
 
@@ -677,8 +677,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
     prerequisites: [2016699, 2015174],
     optatives: [2027642, 2027628]
@@ -690,8 +690,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
     prerequisites: [2016699, 2015174],
     optatives: [2025966, 2027628]
@@ -703,8 +703,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.softwareMethods,
+    component: sc.discipline,
+    group: sg.softwareMethods,
 
     prerequisites: [2016699, 2015174],
     optatives: [2027642, 2025966]
@@ -716,11 +716,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [[2016698, 2016498]],
-    nextMatters: [2016707, 2025967]
+    nextSubjects: [2016707, 2025967]
   },
 
   2016707: {
@@ -729,8 +729,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016697]
   },
@@ -741,11 +741,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [1000017, 2016699, 2016697],
-    nextMatters: [2016702, 2025994]
+    nextSubjects: [2016702, 2025994]
   },
 
   2016722: {
@@ -754,8 +754,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016696]
   },
@@ -766,8 +766,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016702, 2025982]
   },
@@ -778,11 +778,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2025975],
-    nextMatters: [2016697],
+    nextSubjects: [2016697],
     optatives: [2016498]
   },
 
@@ -792,8 +792,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 5,
     asynchronous: 7,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016495],
     optatives: [2016698]
@@ -806,11 +806,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016375],
-    nextMatters: [2016701, 2025982, 2016053],
+    nextSubjects: [2016701, 2025982, 2016053],
     optatives: [2027641]
   },
 
@@ -820,11 +820,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016375],
-    nextMatters: [2016701, 2025982, 2016053],
+    nextSubjects: [2016701, 2025982, 2016053],
     optatives: [2016353]
   },
 
@@ -834,8 +834,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [[1000013, 2015178], 2025967],
     optatives: [2016492]
@@ -847,8 +847,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016503],
     optatives: [2025994]
@@ -860,11 +860,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [[2016353, 2027641], [2015702, 2016028], 2016703],
-    nextMatters: [2025983],
+    nextSubjects: [2025983],
     optatives: [2016053]
   },
 
@@ -874,8 +874,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [[2016353, 2027641], [2015702, 2016028], 2016703],
     optatives: [2025982]
@@ -887,8 +887,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016696],
     optatives: [2027311, 2027313, 2027310, 2027309]
@@ -900,8 +900,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 4,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016696],
     optatives: [2025972, 2027313, 2027310, 2027309]
@@ -914,8 +914,8 @@ const MATTERS = {
 
     synchronous: 4,
     asynchronous: 4,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016696],
     optatives: [2025972, 2027311, 2027310, 2027309]
@@ -927,8 +927,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016696],
     optatives: [2025972, 2027311, 2027313, 2027309]
@@ -940,8 +940,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 4,
-    component: mc.discipline,
-    group: mg.computerInfrastructure,
+    component: sc.discipline,
+    group: sg.computerInfrastructure,
 
     prerequisites: [2016696],
     optatives: [2025972, 2027311, 2027313, 2027310]
@@ -953,8 +953,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.visualComputing,
+    component: sc.discipline,
+    group: sg.visualComputing,
 
     prerequisites: [2016696],
     optatives: [2027629, 2019267]
@@ -966,8 +966,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.visualComputing,
+    component: sc.discipline,
+    group: sg.visualComputing,
 
     prerequisites: [2016696],
     optatives: [2019267, 2025960]
@@ -979,8 +979,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 4,
-    component: mc.discipline,
-    group: mg.visualComputing,
+    component: sc.discipline,
+    group: sg.visualComputing,
 
     prerequisites: [2016696],
     optatives: [2025960, 2027629]
@@ -992,8 +992,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.smartSystems,
+    component: sc.discipline,
+    group: sg.smartSystems,
 
     prerequisites: [2016696],
     optatives: [2023251, 2027631, , 2028837, 2017290]
@@ -1005,8 +1005,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.smartSystems,
+    component: sc.discipline,
+    group: sg.smartSystems,
 
     prerequisites: [2016696],
     optatives: [2025995, 2027631, 2028837, 2017290]
@@ -1018,8 +1018,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.smartSystems,
+    component: sc.discipline,
+    group: sg.smartSystems,
 
     prerequisites: [2016696],
     optatives: [2025995, 2023251, 2028837, 2017290]
@@ -1031,8 +1031,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.discipline,
-    group: mg.smartSystems,
+    component: sc.discipline,
+    group: sg.smartSystems,
 
     prerequisites: [2016696],
     optatives: [2025995, 2023251, 2027631, 2017290]
@@ -1044,8 +1044,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.smartSystems,
+    component: sc.discipline,
+    group: sg.smartSystems,
 
     prerequisites: [2016696],
     optatives: [2025995, 2023251, 2027631, 2028837]
@@ -1057,10 +1057,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.modelSystems,
+    component: sc.discipline,
+    group: sg.modelSystems,
 
-    nextMatters: [2016701, 2025982, 2016053]
+    nextSubjects: [2016701, 2025982, 2016053]
   },
 
   2025969: {
@@ -1069,8 +1069,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.modelSystems,
+    component: sc.discipline,
+    group: sg.modelSystems,
 
     prerequisites: [[2025971, 2015173]]
   },
@@ -1081,11 +1081,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.modelSystems,
+    component: sc.discipline,
+    group: sg.modelSystems,
 
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375],
-    nextMatters: [2025971, 2015173, 2025987],
+    nextSubjects: [2025971, 2015173, 2025987],
     optatives: [2019082]
   },
 
@@ -1095,11 +1095,11 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.discipline,
-    group: mg.modelSystems,
+    component: sc.discipline,
+    group: sg.modelSystems,
 
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375],
-    nextMatters: [2025971, 2015173, 2025987],
+    nextSubjects: [2025971, 2015173, 2025987],
     optatives: [2025970]
   },
 
@@ -1109,11 +1109,11 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.modelSystems,
+    component: sc.discipline,
+    group: sg.modelSystems,
 
     prerequisites: [[2025970, 2019082]],
-    nextMatters: [2025969, 2025987],
+    nextSubjects: [2025969, 2025987],
     optatives: [2015173]
   },
 
@@ -1123,11 +1123,11 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.discipline,
-    group: mg.modelSystems,
+    component: sc.discipline,
+    group: sg.modelSystems,
 
     prerequisites: [[2025970, 2019082]],
-    nextMatters: [2025969, 2025987],
+    nextSubjects: [2025969, 2025987],
     optatives: [2025971]
   },
 
@@ -1137,10 +1137,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.professionalContext,
+    component: sc.discipline,
+    group: sg.professionalContext,
 
-    nextMatters: [2016698]
+    nextSubjects: [2016698]
   },
 
   2024045: {
@@ -1149,8 +1149,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.professionalContext,
+    component: sc.discipline,
+    group: sg.professionalContext,
 
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2016600, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037]
@@ -1162,8 +1162,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.professionalContext,
+    component: sc.discipline,
+    group: sg.professionalContext,
 
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016600, 2016599, 2016741, 2016037]
@@ -1175,8 +1175,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.professionalContext,
+    component: sc.discipline,
+    group: sg.professionalContext,
 
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2016600, 2016007, 2016615, 2016599, 2016741, 2016037]
@@ -1188,8 +1188,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.discipline,
-    group: mg.professionalContext,
+    component: sc.discipline,
+    group: sg.professionalContext,
 
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016600, 2016615, 2016599, 2016741, 2016037]
@@ -1201,8 +1201,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.professionalContext,
+    component: sc.discipline,
+    group: sg.professionalContext,
 
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037]
@@ -1214,8 +1214,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.professionalContext,
+    component: sc.discipline,
+    group: sg.professionalContext,
 
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016600, 2016741, 2016037]
@@ -1227,8 +1227,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.discipline,
-    group: mg.professionalContext,
+    component: sc.discipline,
+    group: sg.professionalContext,
 
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016600, 2016037]
@@ -1240,12 +1240,12 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.basis,
-    group: mg.probability,
+    component: sc.basis,
+    group: sg.probability,
     prerequisites: [[1000005, 2015556]],
     optatives: [1000013, 2015178],
-    component: mc.discipline,
-    group: mg.professionalContext,
+    component: sc.discipline,
+    group: sg.professionalContext,
 
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016600]
@@ -1257,8 +1257,8 @@ const MATTERS = {
     credits: 6,
     synchronous: 2,
     asynchronous: 16,
-    component: mc.discipline,
-    group: mg.degreeWork,
+    component: sc.discipline,
+    group: sg.degreeWork,
 
     specialPrerequisites: 'Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional',
     optatives: [2025973, 2016843]
@@ -1270,8 +1270,8 @@ const MATTERS = {
     credits: 6,
     synchronous: 2,
     asynchronous: 16,
-    component: mc.discipline,
-    group: mg.degreeWork,
+    component: sc.discipline,
+    group: sg.degreeWork,
 
     specialPrerequisites: 'Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional',
     optatives: [2016843, 2025974]
@@ -1283,8 +1283,8 @@ const MATTERS = {
     credits: 6,
     synchronous: 4,
     asynchronous: 14,
-    component: mc.discipline,
-    group: mg.degreeWork,
+    component: sc.discipline,
+    group: sg.degreeWork,
     specialPrerequisites: 'Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional',
     optatives: [2025973, 2025974]
   },
@@ -1295,8 +1295,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     specialPrerequisites: 'Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional'
   },
 
@@ -1306,8 +1306,8 @@ const MATTERS = {
     credits: 6,
     synchronous: 8,
     asynchronous: 10,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     specialPrerequisites: 'Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional'
   },
 
@@ -1317,8 +1317,8 @@ const MATTERS = {
     credits: 9,
     synchronous: 12,
     asynchronous: 15,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     specialPrerequisites: 'Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional'
   },
   1000070: {
@@ -1327,8 +1327,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 1,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     specialPrerequisites: 'Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional'
   },
   1000071: {
@@ -1337,8 +1337,8 @@ const MATTERS = {
     credits: 6,
     synchronous: 1,
     asynchronous: 17,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     specialPrerequisites: 'Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional'
   },
   1000072: {
@@ -1347,8 +1347,8 @@ const MATTERS = {
     credits: 9,
     synchronous: 1,
     asynchronous: 26,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     specialPrerequisites: 'Haber aprobado 30 créditos del Componente de Formación Disciplinar o Profesional'
   },
   2015168: {
@@ -1357,9 +1357,9 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
-    nextMatters: [2015181, 2025819]
+    component: sc.free,
+    group: sg.free,
+    nextSubjects: [2015181, 2025819]
   },
   2015181: {
     id: 2015181,
@@ -1367,10 +1367,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2015168],
-    nextMatters: [2015155]
+    nextSubjects: [2015155]
   },
   2027641: {
     id: 2027641,
@@ -1378,8 +1378,8 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2016375]
   },
   2025819: {
@@ -1388,10 +1388,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.computerScience,
+    component: sc.free,
+    group: sg.computerScience,
     prerequisites: [2015168],
-    nextMatters: [2026548]
+    nextSubjects: [2026548]
   },
   2026548: {
     id: 2026548,
@@ -1399,8 +1399,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.computerScience,
+    component: sc.free,
+    group: sg.computerScience,
     prerequisites: [2015168]
   },
   2026519: {
@@ -1409,8 +1409,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [1000003, 2015555, 2015181]
   },
   2016366: {
@@ -1419,8 +1419,8 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free
+    component: sc.free,
+    group: sg.free
   },
   2016379: {
     id: 2016379,
@@ -1428,10 +1428,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [1000013, 2015178],
-    nextMatters: [2016360]
+    nextSubjects: [2016360]
   },
 
   2016342: {
@@ -1440,10 +1440,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [1000005, 2015556, 1000003, 2015555],
-    nextMatters: [2016506, 2015159]
+    nextSubjects: [2016506, 2015159]
   },
   2016495: {
     id: 2016495,
@@ -1451,10 +1451,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 6,
     asynchronous: 6,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2016489],
-    nextMatters: [2016498]
+    nextSubjects: [2016498]
   },
   2016489: {
     id: 2016489,
@@ -1462,10 +1462,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2016509, 1000004, 2016377],
-    nextMatters: [2016495]
+    nextSubjects: [2016495]
   },
   2016509: {
     id: 2016509,
@@ -1473,10 +1473,10 @@ const MATTERS = {
     credits: 2,
     synchronous: 4,
     asynchronous: 2,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2025975],
-    nextMatters: [2016489]
+    nextSubjects: [2016489]
   },
   2016503: {
     id: 2016503,
@@ -1484,10 +1484,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2016487],
-    nextMatters: [2016492]
+    nextSubjects: [2016492]
   },
   2016487: {
     id: 2016487,
@@ -1495,10 +1495,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [1000006, 2015162, 1000017, 2016506],
-    nextMatters: [2016503]
+    nextSubjects: [2016503]
   },
   2016506: {
     id: 2016506,
@@ -1506,10 +1506,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2016489, 2016342],
-    nextMatters: [2016506]
+    nextSubjects: [2016506]
   },
 
   2015159: {
@@ -1518,10 +1518,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2016342],
-    nextMatters: [2016507]
+    nextSubjects: [2016507]
   },
   2016507: {
     id: 2016507,
@@ -1529,10 +1529,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2015159, 2016506],
-    nextMatters: [2017287, 2016493]
+    nextSubjects: [2017287, 2016493]
   },
   2026213: {
     id: 2026213,
@@ -1540,10 +1540,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
 
   2026732: {
@@ -1552,10 +1552,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2019772: {
     id: 2019772,
@@ -1563,10 +1563,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2019765: {
     id: 2019765,
@@ -1574,10 +1574,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2019773: {
     id: 2019773,
@@ -1585,10 +1585,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2019795: {
     id: 2019795,
@@ -1596,10 +1596,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2019762: {
     id: 2019762,
@@ -1607,10 +1607,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.computerScience,
+    component: sc.free,
+    group: sg.computerScience,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
 
   2026484: {
@@ -1619,10 +1619,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2019818: {
     id: 2019818,
@@ -1630,10 +1630,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
 
   2019779: {
@@ -1642,10 +1642,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2026442: {
     id: 2026442,
@@ -1653,10 +1653,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2025439: {
     id: 2025439,
@@ -1664,10 +1664,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2019799: {
     id: 2019799,
@@ -1675,10 +1675,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.visualComputing,
+    component: sc.free,
+    group: sg.visualComputing,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2025783: {
     id: 2025783,
@@ -1686,10 +1686,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2026231: {
     id: 2026231,
@@ -1697,10 +1697,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2026537: {
     id: 2026537,
@@ -1708,10 +1708,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2026538: {
     id: 2026538,
@@ -1719,10 +1719,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2026440: {
     id: 2026440,
@@ -1730,10 +1730,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 3,
     asynchronous: 9,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2026502: {
     id: 2026502,
@@ -1741,10 +1741,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 3,
     asynchronous: 9,
-    component: mc.free,
-    group: mg.computerInfrastructure,
+    component: sc.free,
+    group: sg.computerInfrastructure,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2016605: {
     id: 2016605,
@@ -1752,10 +1752,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.modelSystems,
+    component: sc.free,
+    group: sg.modelSystems,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2015177: {
     id: 2015177,
@@ -1763,10 +1763,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2026555: {
     id: 2026555,
@@ -1774,10 +1774,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.modelSystems,
+    component: sc.free,
+    group: sg.modelSystems,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2015184: {
     id: 2015184,
@@ -1785,10 +1785,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: [2015174, 2016696, 2025964]
+    nextSubjects: [2015174, 2016696, 2025964]
   },
   2015155: {
     id: 2015155,
@@ -1796,10 +1796,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [1000006, 2015162, 2025819, 2015181],
-    nextMatters: [2019072]
+    nextSubjects: [2019072]
   },
   2015150: {
     id: 2015150,
@@ -1807,10 +1807,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2015156: {
     id: 2015156,
@@ -1818,10 +1818,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2016505: {
     id: 2016505,
@@ -1829,10 +1829,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   1000007: {
     id: 1000007,
@@ -1840,10 +1840,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.math,
+    component: sc.free,
+    group: sg.math,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2016702: {
     id: 2016702,
@@ -1851,10 +1851,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.softwareMethods,
+    component: sc.free,
+    group: sg.softwareMethods,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2023644: {
     id: 2023644,
@@ -1862,10 +1862,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2016070: {
     id: 2016070,
@@ -1873,10 +1873,10 @@ const MATTERS = {
     credits: 2,
     synchronous: 3,
     asynchronous: 3,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2016749],
-    nextMatters: [2016071]
+    nextSubjects: [2016071]
   },
   2016071: {
     id: 2016071,
@@ -1884,10 +1884,10 @@ const MATTERS = {
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [2016070],
-    nextMatters: []
+    nextSubjects: []
   },
   2026511: {
     id: 2026511,
@@ -1895,10 +1895,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2027202: {
     id: 2027202,
@@ -1906,10 +1906,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   },
   2016360: {
     id: 2016360,
@@ -1917,10 +1917,10 @@ const MATTERS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: mc.free,
-    group: mg.free,
+    component: sc.free,
+    group: sg.free,
     prerequisites: [],
-    nextMatters: []
+    nextSubjects: []
   }
 }
-export default MATTERS
+export default SUBJECTS
