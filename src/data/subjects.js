@@ -1,3 +1,4 @@
+import CURRICULUM_DATA from './curriculumData'
 
 // sc = subject component
 const sc = {
@@ -355,34 +356,6 @@ const SUBJECTS = {
     component: sc.leveling,
     group: sg.professionalContext
   },
-  1000004: {
-    id: 1000004,
-    name: 'Cálculo diferencial',
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: sc.basis,
-    group: sg.math,
-
-    // This depends of the subject
-    prerequisites: [1000001], // [1000001, 1000002] o [1000001, 1000002, 1000003...]
-    nextSubjects: [1000005],
-    nextSubjects: [1000005, 2015556, 1000003, 2015555, 1000019],
-    optatives: [2016377]
-  },
-  2016377: {
-    id: 2016377,
-    name: 'Cálculo diferencial en una variable',
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: sc.basis,
-    group: sg.math,
-    prerequisites: [1000001],
-    nextSubjects: [1000005],
-    nextSubjects: [1000005, 2015556, 1000003, 2015555, 1000019],
-    optatives: [1000004]
-  },
   2016499: {
     id: 2016499,
     name: 'Electrónica Digital II',
@@ -588,7 +561,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     prerequisites: [[2015734, 2026573]],
     nextSubjects: [2016699, 2016353, 2027641, 2025970, 2025970, 2027641]
   },
@@ -601,7 +573,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     prerequisites: [2016375],
     nextSubjects: [2016696, 2016701, 2025966, 2027642, 2027628, 2025967]
   },
@@ -614,7 +585,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     prerequisites: [[2016353, 2027641], 2016703, 2016699],
     nextSubjects: [2016702]
   },
@@ -627,7 +597,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     prerequisites: [2016701, 2025967],
     nextSubjects: [2016716, 2025983]
   },
@@ -640,7 +609,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     prerequisites: [2016702]
   },
 
@@ -652,7 +620,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     nextSubjects: [2016375],
     optatives: [2026573]
   },
@@ -665,7 +632,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     nextSubjects: [2016375],
     optatives: [2015734]
   },
@@ -678,7 +644,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     prerequisites: [2016699, 2015174],
     optatives: [2027642, 2027628]
   },
@@ -691,7 +656,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     prerequisites: [2016699, 2015174],
     optatives: [2025966, 2027628]
   },
@@ -704,7 +668,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.softwareMethods,
-
     prerequisites: [2016699, 2015174],
     optatives: [2027642, 2025966]
   },
@@ -717,7 +680,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [[2016698, 2016498]],
     nextSubjects: [2016707, 2025967]
   },
@@ -730,7 +692,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016697]
   },
 
@@ -742,7 +703,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [1000017, 2016699, 2016697],
     nextSubjects: [2016702, 2025994]
   },
@@ -755,7 +715,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016696]
   },
 
@@ -767,7 +726,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016702, 2025982]
   },
 
@@ -779,7 +737,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2025975],
     nextSubjects: [2016697],
     optatives: [2016498]
@@ -793,7 +750,6 @@ const SUBJECTS = {
     asynchronous: 7,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016495],
     optatives: [2016698]
 
@@ -807,7 +763,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016375],
     nextSubjects: [2016701, 2025982, 2016053],
     optatives: [2027641]
@@ -821,7 +776,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016375],
     nextSubjects: [2016701, 2025982, 2016053],
     optatives: [2016353]
@@ -835,7 +789,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [[1000013, 2015178], 2025967],
     optatives: [2016492]
   },
@@ -848,7 +801,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016503],
     optatives: [2025994]
   },
@@ -861,7 +813,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [[2016353, 2027641], [2015702, 2016028], 2016703],
     nextSubjects: [2025983],
     optatives: [2016053]
@@ -875,7 +826,6 @@ const SUBJECTS = {
     asynchronous: 8,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [[2016353, 2027641], [2015702, 2016028], 2016703],
     optatives: [2025982]
   },
@@ -888,7 +838,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2027311, 2027313, 2027310, 2027309]
   },
@@ -901,7 +850,6 @@ const SUBJECTS = {
     asynchronous: 4,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2025972, 2027313, 2027310, 2027309]
   },
@@ -910,12 +858,10 @@ const SUBJECTS = {
     id: 2027313,
     name: 'Teoría de la codificación',
     credits: 4,
-
     synchronous: 4,
     asynchronous: 4,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2025972, 2027311, 2027310, 2027309]
   },
@@ -928,7 +874,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2025972, 2027311, 2027313, 2027309]
   },
@@ -941,7 +886,6 @@ const SUBJECTS = {
     asynchronous: 4,
     component: sc.discipline,
     group: sg.computerInfrastructure,
-
     prerequisites: [2016696],
     optatives: [2025972, 2027311, 2027313, 2027310]
   },
@@ -954,7 +898,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.visualComputing,
-
     prerequisites: [2016696],
     optatives: [2027629, 2019267]
   },
@@ -967,7 +910,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.visualComputing,
-
     prerequisites: [2016696],
     optatives: [2019267, 2025960]
   },
@@ -980,7 +922,6 @@ const SUBJECTS = {
     asynchronous: 4,
     component: sc.discipline,
     group: sg.visualComputing,
-
     prerequisites: [2016696],
     optatives: [2025960, 2027629]
   },
@@ -993,9 +934,8 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.smartSystems,
-
     prerequisites: [2016696],
-    optatives: [2023251, 2027631, , 2028837, 2017290]
+    optatives: [2023251, 2027631, 2028837, 2017290]
   },
 
   2023251: {
@@ -1006,7 +946,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.smartSystems,
-
     prerequisites: [2016696],
     optatives: [2025995, 2027631, 2028837, 2017290]
   },
@@ -1019,7 +958,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.smartSystems,
-
     prerequisites: [2016696],
     optatives: [2025995, 2023251, 2028837, 2017290]
   },
@@ -1032,7 +970,6 @@ const SUBJECTS = {
     asynchronous: 8,
     component: sc.discipline,
     group: sg.smartSystems,
-
     prerequisites: [2016696],
     optatives: [2025995, 2023251, 2027631, 2017290]
   },
@@ -1045,7 +982,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.smartSystems,
-
     prerequisites: [2016696],
     optatives: [2025995, 2023251, 2027631, 2028837]
   },
@@ -1058,7 +994,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.modelSystems,
-
     nextSubjects: [2016701, 2025982, 2016053]
   },
 
@@ -1070,7 +1005,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.modelSystems,
-
     prerequisites: [[2025971, 2015173]]
   },
 
@@ -1082,7 +1016,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.modelSystems,
-
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375],
     nextSubjects: [2025971, 2015173, 2025987],
     optatives: [2019082]
@@ -1096,7 +1029,6 @@ const SUBJECTS = {
     asynchronous: 8,
     component: sc.discipline,
     group: sg.modelSystems,
-
     prerequisites: [[1000006, 2015162], [2025964, 2026519], [1000013, 2015178], 2016375],
     nextSubjects: [2025971, 2015173, 2025987],
     optatives: [2025970]
@@ -1110,7 +1042,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.modelSystems,
-
     prerequisites: [[2025970, 2019082]],
     nextSubjects: [2025969, 2025987],
     optatives: [2015173]
@@ -1124,7 +1055,6 @@ const SUBJECTS = {
     asynchronous: 8,
     component: sc.discipline,
     group: sg.modelSystems,
-
     prerequisites: [[2025970, 2019082]],
     nextSubjects: [2025969, 2025987],
     optatives: [2025971]
@@ -1138,7 +1068,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.professionalContext,
-
     nextSubjects: [2016698]
   },
 
@@ -1150,7 +1079,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2016600, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037]
   },
@@ -1163,7 +1091,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016600, 2016599, 2016741, 2016037]
   },
@@ -1176,7 +1103,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2016600, 2016007, 2016615, 2016599, 2016741, 2016037]
   },
@@ -1189,7 +1115,6 @@ const SUBJECTS = {
     asynchronous: 8,
     component: sc.discipline,
     group: sg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016600, 2016615, 2016599, 2016741, 2016037]
   },
@@ -1202,7 +1127,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016037]
   },
@@ -1215,7 +1139,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016600, 2016741, 2016037]
   },
@@ -1228,7 +1151,6 @@ const SUBJECTS = {
     asynchronous: 5,
     component: sc.discipline,
     group: sg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016600, 2016037]
   },
@@ -1239,13 +1161,8 @@ const SUBJECTS = {
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
-    component: sc.basis,
-    group: sg.probability,
-    prerequisites: [[1000005, 2015556]],
-    optatives: [1000013, 2015178],
     component: sc.discipline,
     group: sg.professionalContext,
-
     specialPrerequisites: 'Haber aprovado aprobado 30 créditos del Componente de Formación Disciplinar o Profesional; y, Gerencia y Gestión de Proyectos o Diseño, Gestión y Evaluación de Proyectos',
     optatives: [2024045, 2026551, 2016007, 2016615, 2016599, 2016741, 2016600]
   },
@@ -1258,7 +1175,6 @@ const SUBJECTS = {
     asynchronous: 16,
     component: sc.discipline,
     group: sg.degreeWork,
-
     specialPrerequisites: 'Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional',
     optatives: [2025973, 2016843]
   },
@@ -1271,7 +1187,6 @@ const SUBJECTS = {
     asynchronous: 16,
     component: sc.discipline,
     group: sg.degreeWork,
-
     specialPrerequisites: 'Haber aprobado 40 créditos del Componente de Formación Disciplinar o Profesional',
     optatives: [2016843, 2025974]
   },
@@ -1357,40 +1272,8 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    nextSubjects: [2015181, 2025819]
-  },
-  2015181: {
-    id: 2015181,
-    name: 'Sistemas Numéricos',
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: sc.free,
-    group: sg.free,
-    prerequisites: [2015168],
-    nextSubjects: [2015155]
-  },
-  2027641: {
-    id: 2027641,
-    name: 'Análisis de bases de datos',
-    credits: 3,
-    synchronous: 4,
-    asynchronous: 5,
-    component: sc.free,
-    group: sg.computerInfrastructure,
-    prerequisites: [2016375]
-  },
-  2025819: {
-    id: 2025819,
-    name: 'Introducción a la Teoría de Conjuntos',
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: sc.free,
     group: sg.computerScience,
-    prerequisites: [2015168],
-    nextSubjects: [2026548]
+    nextSubjects: [2015181, 2025819]
   },
   2026548: {
     id: 2026548,
@@ -1400,7 +1283,8 @@ const SUBJECTS = {
     asynchronous: 8,
     component: sc.free,
     group: sg.computerScience,
-    prerequisites: [2015168]
+    prerequisites: [2015168],
+    nextSubjects: [2015184]
   },
   2026519: {
     id: 2026519,
@@ -1409,8 +1293,8 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [1000003, 2015555, 2015181]
+    group: sg.computerScience,
+    prerequisites: [[1000003, 2015555], 2015181]
   },
   2016366: {
     id: 2016366,
@@ -1419,7 +1303,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free
+    group: sg.probability
   },
   2016379: {
     id: 2016379,
@@ -1428,7 +1312,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
+    group: sg.probability,
     prerequisites: [1000013, 2015178],
     nextSubjects: [2016360]
   },
@@ -1440,8 +1324,8 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [1000005, 2015556, 1000003, 2015555],
+    group: sg.math,
+    prerequisites: [[1000005, 2015556], [1000003, 2015555]],
     nextSubjects: [2016506, 2015159]
   },
   2016495: {
@@ -1451,7 +1335,7 @@ const SUBJECTS = {
     synchronous: 6,
     asynchronous: 6,
     component: sc.free,
-    group: sg.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2016489],
     nextSubjects: [2016498]
   },
@@ -1462,8 +1346,8 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [2016509, 1000004, 2016377],
+    group: sg.computerInfrastructure,
+    prerequisites: [2016509, [1000004, 2016377]],
     nextSubjects: [2016495]
   },
   2016509: {
@@ -1473,7 +1357,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 2,
     component: sc.free,
-    group: sg.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2025975],
     nextSubjects: [2016489]
   },
@@ -1484,7 +1368,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2016487],
     nextSubjects: [2016492]
   },
@@ -1495,8 +1379,8 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [1000006, 2015162, 1000017, 2016506],
+    group: sg.computerInfrastructure,
+    prerequisites: [[1000006, 2015162], 1000017, 2016506],
     nextSubjects: [2016503]
   },
   2016506: {
@@ -1506,9 +1390,9 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [2016489, 2016342],
-    nextSubjects: [2016506]
+    group: sg.computerInfrastructure,
+    prerequisites: [2016489, [2016342, 1000007]],
+    nextSubjects: [2016507]
   },
 
   2015159: {
@@ -1518,8 +1402,8 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [2016342],
+    group: sg.math,
+    prerequisites: [[2016342, 1000007]],
     nextSubjects: [2016507]
   },
   2016507: {
@@ -1529,7 +1413,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.free,
+    group: sg.computerInfrastructure,
     prerequisites: [2015159, 2016506],
     nextSubjects: [2017287, 2016493]
   },
@@ -1540,21 +1424,17 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.softwareMethods
   },
 
-  2026732: {
-    id: 2026732,
+  2016732: {
+    id: 2016732,
     name: 'Desarrollo de Aplicaciones Móviles',
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.softwareMethods
   },
   2019772: {
     id: 2019772,
@@ -1563,9 +1443,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.softwareMethods
   },
   2019765: {
     id: 2019765,
@@ -1574,9 +1452,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.softwareMethods
   },
   2019773: {
     id: 2019773,
@@ -1585,9 +1461,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.softwareMethods
   },
   2019795: {
     id: 2019795,
@@ -1596,9 +1470,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.softwareMethods
   },
   2019762: {
     id: 2019762,
@@ -1607,9 +1479,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.computerScience,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerScience
   },
 
   2026484: {
@@ -1619,9 +1489,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.visualComputing,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.visualComputing
   },
   2019818: {
     id: 2019818,
@@ -1630,9 +1498,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.visualComputing,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.visualComputing
   },
 
   2019779: {
@@ -1642,9 +1508,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.visualComputing,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.visualComputing
   },
   2026442: {
     id: 2026442,
@@ -1653,9 +1517,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.visualComputing,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.visualComputing
   },
   2025439: {
     id: 2025439,
@@ -1664,9 +1526,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.visualComputing,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.visualComputing
   },
   2019799: {
     id: 2019799,
@@ -1675,9 +1535,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.visualComputing,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.visualComputing
   },
   2025783: {
     id: 2025783,
@@ -1686,9 +1544,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerInfrastructure
   },
   2026231: {
     id: 2026231,
@@ -1697,9 +1553,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.computerInfrastructure,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerInfrastructure
   },
   2026537: {
     id: 2026537,
@@ -1708,9 +1562,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.computerInfrastructure,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerInfrastructure
   },
   2026538: {
     id: 2026538,
@@ -1719,9 +1571,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.computerInfrastructure,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerInfrastructure
   },
   2026440: {
     id: 2026440,
@@ -1730,9 +1580,7 @@ const SUBJECTS = {
     synchronous: 3,
     asynchronous: 9,
     component: sc.free,
-    group: sg.computerInfrastructure,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerInfrastructure
   },
   2026502: {
     id: 2026502,
@@ -1741,9 +1589,7 @@ const SUBJECTS = {
     synchronous: 3,
     asynchronous: 9,
     component: sc.free,
-    group: sg.computerInfrastructure,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerInfrastructure
   },
   2016605: {
     id: 2016605,
@@ -1752,9 +1598,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.modelSystems,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.modelSystems
   },
   2015177: {
     id: 2015177,
@@ -1763,9 +1607,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.modelSystems
   },
   2026555: {
     id: 2026555,
@@ -1774,19 +1616,17 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.modelSystems,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.modelSystems
   },
   2015184: {
     id: 2015184,
-    name: '	Teoría de grafos',
+    name: 'Teoría de grafos',
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
+    group: sg.computerScience,
+    prerequisites: [2026548],
     nextSubjects: [2015174, 2016696, 2025964]
   },
   2015155: {
@@ -1796,20 +1636,19 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [1000006, 2015162, 2025819, 2015181],
+    group: sg.computerScience,
+    prerequisites: [[1000006, 2015162], 2015181],
     nextSubjects: [2019072]
   },
   2015150: {
     id: 2015150,
-    name: 'Análisis numérico',
+    name: 'Análisis numérico ',
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerScience,
+    prerequisites: [2015155, 2026555, [2015162, 1000006]]
   },
   2015156: {
     id: 2015156,
@@ -1818,42 +1657,28 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerScience
   },
   2016505: {
     id: 2016505,
-    name: '	Microsistemas',
+    name: 'Microsistemas',
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.computerInfrastructure,
+    prerequisites: [2016499]
   },
   1000007: {
     id: 1000007,
-    name: '	Ecuaciones Diferenciales',
+    name: 'Ecuaciones Diferenciales',
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
     group: sg.math,
-    prerequisites: [],
-    nextSubjects: []
-  },
-  2016702: {
-    id: 2016702,
-    name: 'Ingeniería de software II',
-    credits: 4,
-    synchronous: 4,
-    asynchronous: 8,
-    component: sc.free,
-    group: sg.softwareMethods,
-    prerequisites: [],
-    nextSubjects: []
+    prerequisites: [1000005, 1000003],
+    nextSubjects: [2016506, 2015159]
   },
   2023644: {
     id: 2023644,
@@ -1862,9 +1687,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.visualComputing
   },
   2016070: {
     id: 2016070,
@@ -1873,20 +1696,20 @@ const SUBJECTS = {
     synchronous: 3,
     asynchronous: 3,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [2016749],
+    group: sg.visualComputing,
+    prerequisites: [2025975],
     nextSubjects: [2016071]
   },
   2016071: {
     id: 2016071,
-    name: 'Fundamentos tecnológicos: Formatos y medidas',
+    name: 'Fundamentos tecnológicos: tipometría',
     credits: 3,
     synchronous: 4,
     asynchronous: 5,
     component: sc.free,
-    group: sg.free,
+    group: sg.visualComputing,
     prerequisites: [2016070],
-    nextSubjects: []
+    nextSubjects: [2016069]
   },
   2026511: {
     id: 2026511,
@@ -1895,20 +1718,16 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.visualComputing
   },
   2027202: {
     id: 2027202,
-    name: '	Introduction to data science and data visualization',
+    name: 'Introduction to data science and data visualization',
     credits: 4,
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.visualComputing
   },
   2016360: {
     id: 2016360,
@@ -1917,9 +1736,7 @@ const SUBJECTS = {
     synchronous: 4,
     asynchronous: 8,
     component: sc.free,
-    group: sg.free,
-    prerequisites: [],
-    nextSubjects: []
+    group: sg.probability
   }
 }
 export default SUBJECTS
