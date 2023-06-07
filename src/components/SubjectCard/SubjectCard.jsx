@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import SUBJECTS from '../../data/subjects'
 import './SubjectCard.css'
 
 // All options are optional, and if their value are undefined, will be crawled at SUBJECTS if id is defined
 const SubjectCard = ({ id, credits, synchronous, asynchronous, name, group, component, handleModal }) => {
-  const subject = SUBJECTS[id] ?? null
+  const subject = useMemo(() => {
+    return SUBJECTS[id] ?? null
+  }, [])
 
   const [subjectInfo] = useState({
     credits: credits ?? subject?.credits,

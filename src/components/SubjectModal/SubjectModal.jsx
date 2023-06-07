@@ -1,9 +1,12 @@
+import { useMemo } from 'react'
 import SUBJECTS from '../../data/subjects'
 import ModalBackground from '../ModalBackground/ModalBackground'
 import './SubjectModal.css'
 
 const SubjectModal = ({ id, handleModal }) => {
-  const { credits, name, synchronous, asynchronous, group, component } = SUBJECTS[id]
+  const { credits, name, synchronous, asynchronous, group, component } = useMemo(() => {
+    return SUBJECTS[id]
+  }, [])
   const prerequisites = SUBJECTS[id]?.prerequisites
   const nextSubjects = SUBJECTS[id]?.nextSubjects
   const optatives = SUBJECTS[id]?.optatives
