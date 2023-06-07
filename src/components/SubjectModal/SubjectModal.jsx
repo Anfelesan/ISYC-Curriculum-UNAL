@@ -16,7 +16,7 @@ const SubjectModal = ({ id, handleModal }) => {
   // stopPropagation prevent that a click inside the modal affect the event at ModalBackground
   return (
     <ModalBackground closeModal={closeModal}>
-      <div className='subjectModal-exit' onClick={closeModal}>
+      <div className='subjectModal-exit'>
         <div className='subjectModal-exit-x' />
       </div>
       <div className='subjectModal' onClick={e => e.stopPropagation()}>
