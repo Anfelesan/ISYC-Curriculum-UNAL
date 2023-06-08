@@ -10,13 +10,13 @@
   border: solid 2px #000;
 }
 
-.infoSquares-item-credits{
+.infoSquares-item-credits {
   background-color: #000;
   color: #fff;
   border-right-width: 0;
   border-radius: 4px 0 0 4px;
 }
-.infoSquares-item-asynchronous{
+.infoSquares-item-asynchronous {
   border-left-width: 0;
   border-radius: 0 4px 4px 0;
 }
