@@ -1,0 +1,91 @@
+.footer {
+  --footer-background: #fff;
+}
+.dark .footer {
+  --footer-background: #000;
+}
+
+.footer {
+  padding: 10px 5px 0 5px;
+  background-color: var(--footer-background);
+}
+
+.footer-subtitle {
+  font-size: clamp(25px, 4vw, 33px);
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+  color: #222;
+}
+
+.guide-info-ilustrations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.guide-info-container .infoSquares {
+  grid-template-rows: repeat(2, minmax(10px, 40px));
+}
+.guide-info-container .infoSquares-item{
+  padding: 5px;
+}
+
+.guide-info-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.guide-info-card {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-self: stretch;
+  overflow: hidden;
+  border: solid 3px #000;
+  border-radius: 4px;
+  background-color: #eee;
+}
+.guide-info-card-abbreviation {
+  display: block;
+  text-align: center;
+  padding: 4px 0;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+}
+.guide-info-card-content {
+  display: grid;
+  place-content: center;
+  flex-grow: 1;
+  font-size: 1.05em;
+  font-weight: 500;
+  color: #555;
+}
+
+.guide-info-card-ulList {
+  margin: 0;
+  padding: 12px 7px 0 7px;
+  list-style: none;
+}
+.guide-info-card-ulList li {
+  margin-bottom: 12px;
+}
+
+.guide-info-card-list-letter {
+  display: inline-grid;
+  place-content: center;
+  width: 26px;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: solid 2px #ccc;
+  font-size: 1.2em;
+  color: #012;
+}
+
+.guide-info-card-text {
+  padding: 10px;  
+}

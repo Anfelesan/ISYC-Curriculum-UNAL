@@ -4,6 +4,8 @@
 }
 .infoSquares-item {
   box-sizing: border-box;
+  display: grid;
+  place-content: center;
   padding: 2px;
   text-align: center;
   background-color: #fff;
