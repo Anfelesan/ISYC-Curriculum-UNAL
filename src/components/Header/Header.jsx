@@ -22,7 +22,7 @@ const Header = () => {
 const LogoAndInfoContainer = () => {
   return (
     <div className='header-logoAndInfoContainer'>
-      <img className='header-logo' src='./src/assets/logo-UNAL.png' alt='logo Universidad Nacional de Colombia' />
+      <img className='header-logo' src='https://raw.githubusercontent.com/Anfelesan/ISYC-Curriculum-UNAL/main/src/assets/logo-UNAL.png' alt='logo Universidad Nacional de Colombia' />
       <p>Area curricular de ingeniería de sistemas e industrial</p>
       <p><b>Programa de pregrado en ingeniería de sistemas y computación</b></p>
     </div>
