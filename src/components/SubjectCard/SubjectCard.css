@@ -1,7 +1,5 @@
 .subjectCard-container {
   display: flex;
-  justify-content: center;
-  width: 100%;
 }
 .subjectCard-prerequisites-container,
 .subjectCard-nextSubjects-container {
@@ -15,7 +13,6 @@
   display: grid;
   place-content: center;
   border: solid 3px #000;
-  font-size: 0.7em;
   color: #fff;
 }
 .subjectCard-prerequisite-square {
@@ -33,14 +30,14 @@
 }
 
 .subjectCard {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 220px;
   overflow: hidden;
   border: solid 3px #000;
   border-radius: 8px;
   background-color: #fff;
+  width: fit-content;
 }
 
 .subjectCard-firstData-container {
@@ -49,10 +46,10 @@
 }
 .subjectCard-firstData-container span {
   flex-grow: 1;
+  padding: 3px 5px;
   text-align: center;
-  font-weight: 800;
-  font-size: 0.8em;
   font-weight: 600;
+  font-size: 0.87em;
 }
 .subjectCard-credits {
   background-color: #000;
@@ -72,15 +69,14 @@
   padding: 2px 2px;
   border-bottom: solid 3px #000;
   text-align: center;
+  font-size: 0.93em;
 }
 .subjectCard-name {
   flex-grow: 5;
   font-weight: 600;
-  font-size: 0.67em;
 }
 .subjectCard-group {
   flex-grow: 3;
-  font-size: 0.67em;
 }
 
 .subjectCard-idComponent-container {
@@ -88,6 +84,13 @@
   flex-grow: 1;
   justify-content: space-between;
   min-height: 15px;
+}
+.subjectCard-component,
+.subjectCard-id {
+  display: grid;
+  place-content: center;
+  padding: 2px;
+  font-size: 0.95em;
 }
 .subjectCard-id {
   flex-grow: 2;
@@ -98,12 +101,6 @@
   flex-grow: 1;
   text-align: center;
   font-weight: 600;
-}
-.subjectCard-component,
-.subjectCard-id {
-  display: grid;
-  place-content: center;
-  font-size: 0.8em;
 }
 
 .subjectCard-seeMore {
@@ -120,30 +117,4 @@
 }
 .subjectCard-seeMore:hover {
   background-color: #0af;
-}
-
-@media screen and (min-width: 1610px) {
-  .subjectCard-name {
-    font-size: 0.72em;
-  }
-  .subjectCard-group {
-    font-size: 0.69em;
-  }
-  .subjectCard-prerequisite-square,
-  .subjectCard-nextSubject-square {
-    font-size: 0.85em;
-  }
-}
-
-@media (max-width: 1365px) {
-  .subjectCard-name {
-    font-size: 0.9em;
-  }
-  .subjectCard-group {
-    font-size: 0.85em;
-  }
-  .subjectCard-prerequisite-square,
-  .subjectCard-nextSubject-square {
-    font-size: .95em;
-  }
 }
