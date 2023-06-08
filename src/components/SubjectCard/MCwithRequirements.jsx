@@ -38,3 +38,24 @@ const MCwithRequirements = ({ id, credits, synchronous, asynchronous, name, grou
   )
 }
 export default MCwithRequirements
+
+export const SCwithRequirementsDemo = ({ id, credits, synchronous, asynchronous, name, group, component, preRelations, nextRelation }) => {
+  return (
+    <div className='subjectCard-container'>
+      <div className='subjectCard-prerequisites-container'>
+        <div className='subjectCard-prerequisite-square' style={{backgroundColor: '#c4a'}}>PRE</div>
+        <div className='subjectCard-prerequisite-square'>PRE</div>
+      </div>
+      <SubjectCard
+        id={id}
+        credits={credits}
+        synchronous={synchronous}
+        asynchronous={asynchronous}
+        name={name}
+        group={group}
+        component={component}
+      />
+      <div className='subjectCard-nextSubject-square' style={{ backgroundColor: '#4ca' }}>NEXT</div>
+    </div>
+  )
+}
