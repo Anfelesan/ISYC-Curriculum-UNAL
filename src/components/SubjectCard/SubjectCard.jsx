@@ -32,7 +32,7 @@ const SubjectCard = ({ id, credits, synchronous, asynchronous, name, group, comp
         <span className='subjectCard-id'>{id}</span>
         <span className='subjectCard-component'>{subjectInfo.component?.symbol}</span>
       </div>
-      {id && <button className='subjectCard-seeMore' onClick={() => handleModal(id)}>Ver más</button>}
+      {subject && <button className='subjectCard-seeMore' onClick={() => handleModal(id)}>Ver más</button>}
     </div>
   )
 }
