@@ -147,6 +147,14 @@ const CURRICULUM_DATA = {
         color: '#daeef3',
         colorDM: '#daeef3'
       }
+    },
+    leveling: {
+      foreignLanguages: {
+        name: 'Lenguas extranjeras',
+        credits: 12,
+        color: '#ffd966',
+        ffd966: '#ffd966'
+      }
     }
   }
 }

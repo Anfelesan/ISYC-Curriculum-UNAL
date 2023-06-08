@@ -98,23 +98,26 @@ const Components = () => {
 const ComponentAsignatures = () => {
   return (
     <div className='header-componentAsignatures'>
-      {Object.entries(CURRICULUM_DATA.groups).map(([componentType, groupsObj], index) =>
-
-        <div className='header-asignatureComponent' key={index}>
-          <span
-            className='asignatureComponent-letter' style={{ backgroundColor: dictWithColor(CURRICULUM_DATA.components[componentType]).color }}
-          >
-            {CURRICULUM_DATA.components[componentType].symbol}
-          </span>
-          <div className='header-componentAsignatures-list'>
-            {Object.values(groupsObj).map((group, index) =>
-              <TextAndNumericData credits={group.credits} color={dictWithColor(group).color} numColor='#000' small key={index}>
-                {group.name}
-              </TextAndNumericData>
-            )}
-          </div>
-        </div>
-      )}
+      {Object.entries(CURRICULUM_DATA.groups).map(([componentType, groupsObj], index) => {
+        return componentType !== 'leveling'
+          ? (
+            <div className='header-asignatureComponent' key={index}>
+              <span
+                className='asignatureComponent-letter' style={{ backgroundColor: dictWithColor(CURRICULUM_DATA.components[componentType]).color }}
+              >
+                {CURRICULUM_DATA.components[componentType].symbol}
+              </span>
+              <div className='header-componentAsignatures-list'>
+                {Object.values(groupsObj).map((group, index) =>
+                  <TextAndNumericData credits={group.credits} color={dictWithColor(group).color} numColor='#000' small key={index}>
+                    {group.name}
+                  </TextAndNumericData>
+                )}
+              </div>
+            </div>
+            )
+          : null
+      })}
     </div>
   )
 }
